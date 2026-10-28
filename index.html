@@ -1,0 +1,4511 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>RAADHYA ETHNICA | Authentic Indian Ethnic Wear | Kathmandu</title>
+  <meta name="description" content="Authentic Indian Ethnic Wear. Crafted with passion and elegance, celebrating every woman, every occasion. Discover handcrafted pure cotton, designer, and festive kurtas from our Kathmandu atelier.">
+  <link rel="icon" type="image/png" href="logo.png">
+  
+  <!-- Google Fonts: Bodoni Moda (Display Serif) & Jost (Geometric Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       LUXURY DESIGN SYSTEM & THEME TOKENS (LOUIS VUITTON EDITORIAL STYLE)
+       ========================================================================== */
+    :root {
+      /* Light Theme (Default) */
+      --bg-primary: #ffffff;
+      --bg-secondary: #fbfaf8;
+      --bg-surface: #f5f3ef;
+      --bg-surface-elevated: #ffffff;
+      --text-primary: #111111;
+      --text-secondary: #585552;
+      --text-muted: #8c8882;
+      --border-color: #e5e2dc;
+      --border-subtle: #f0ede8;
+      --bronze: #9c805a;
+      --bronze-dark: #7d6545;
+      --bronze-light: #d8c8b4;
+      --bronze-subtle: #f5f0e9;
+      --focus-ring: #9c805a;
+      --nav-height: 80px;
+      --announcement-height: 38px;
+      --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.04);
+      --shadow-dropdown: 0 16px 40px rgba(0, 0, 0, 0.08);
+      --transition-base: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+      --font-display: 'Bodoni Moda', Georgia, serif;
+      --font-body: 'Jost', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+
+    [data-theme="dark"] {
+      --bg-primary: #0a0a0a;
+      --bg-secondary: #121212;
+      --bg-surface: #181818;
+      --bg-surface-elevated: #202020;
+      --text-primary: #f6f5f3;
+      --text-secondary: #b6b3ac;
+      --text-muted: #75726c;
+      --border-color: #272522;
+      --border-subtle: #1c1b19;
+      --bronze: #bfa17c;
+      --bronze-dark: #917554;
+      --bronze-light: #443b31;
+      --bronze-subtle: #1f1b16;
+      --focus-ring: #bfa17c;
+      --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.5);
+      --shadow-dropdown: 0 16px 40px rgba(0, 0, 0, 0.7);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+    /* Base Reset */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-size: 16px;
+    }
+
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      font-weight: 400;
+      line-height: 1.6;
+      min-height: 100vh;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: var(--transition-base);
+    }
+
+    button {
+      font-family: inherit;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: inherit;
+      padding: 0;
+      border-radius: 0;
+    }
+
+    button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+      outline: 2px solid var(--focus-ring);
+      outline-offset: 3px;
+    }
+
+    img, svg {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Common Micro-typography */
+    .eyebrow {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      font-weight: 500;
+      color: var(--bronze);
+      display: block;
+      margin-bottom: 0.75rem;
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 3.2vw, 2.75rem);
+      font-weight: 400;
+      letter-spacing: -0.01em;
+      line-height: 1.25;
+      color: var(--text-primary);
+    }
+
+    .section-desc {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      max-width: 580px;
+      margin: 0.75rem auto 0;
+      font-weight: 300;
+    }
+
+    /* Buttons (Strict Square Luxury Architecture) */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      padding: 0.95rem 2.2rem;
+      font-size: 0.75rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      border-radius: 0;
+      transition: var(--transition-base);
+      cursor: pointer;
+      border: 1px solid transparent;
+      white-space: nowrap;
+    }
+
+    .btn-solid {
+      background-color: var(--text-primary);
+      color: var(--bg-primary);
+      border-color: var(--text-primary);
+    }
+
+    .btn-solid:hover {
+      background-color: var(--bronze);
+      border-color: var(--bronze);
+      color: #ffffff;
+    }
+
+    .btn-outline {
+      background-color: transparent;
+      color: var(--text-primary);
+      border-color: var(--text-primary);
+    }
+
+    .btn-outline:hover {
+      background-color: var(--text-primary);
+      color: var(--bg-primary);
+    }
+
+    .btn-bronze {
+      background-color: var(--bronze);
+      color: #ffffff;
+      border-color: var(--bronze);
+    }
+
+    .btn-bronze:hover {
+      background-color: var(--bronze-dark);
+      border-color: var(--bronze-dark);
+    }
+
+    .btn-link {
+      padding: 0;
+      border: none;
+      background: none;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-weight: 500;
+      position: relative;
+      display: inline-block;
+      color: var(--text-primary);
+    }
+
+    .btn-link::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: currentColor;
+      transition: transform 0.25s ease;
+      transform-origin: left;
+    }
+
+    .btn-link:hover::after {
+      transform: scaleX(0.5);
+    }
+
+    /* Container */
+    .container {
+      width: 100%;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        padding: 0 3rem;
+      }
+    }
+
+    /* ==========================================================================
+       HEADER & SLOW ROTATING ANNOUNCEMENT BAR
+       ========================================================================== */
+    .announcement-bar {
+      background-color: var(--bg-surface);
+      border-bottom: 1px solid var(--border-subtle);
+      height: var(--announcement-height);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      font-size: 0.7rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      z-index: 100;
+    }
+
+    .announcement-item {
+      position: absolute;
+      opacity: 0;
+      transform: translateY(8px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+      text-align: center;
+      padding: 0 1rem;
+      pointer-events: none;
+    }
+
+    .announcement-item.active {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+
+    .announcement-item a {
+      color: var(--bronze);
+      margin-left: 0.4rem;
+      font-weight: 500;
+    }
+
+    header.site-header {
+      position: sticky;
+      top: 0;
+      z-index: 90;
+      background-color: var(--bg-primary);
+      border-bottom: 1px solid var(--border-color);
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+
+    .header-inner {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      height: var(--nav-height);
+      padding: 0 1.5rem;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 768px) {
+      .header-inner {
+        padding: 0 3rem;
+      }
+    }
+
+    /* Left Nav Elements */
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .menu-trigger {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-weight: 500;
+      padding: 0.5rem 0;
+    }
+
+    .hamburger-icon {
+      width: 18px;
+      height: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .hamburger-icon span {
+      display: block;
+      height: 1.5px;
+      width: 100%;
+      background-color: var(--text-primary);
+      transition: var(--transition-base);
+    }
+
+    .header-desktop-nav {
+      display: none;
+      gap: 1.75rem;
+      margin-left: 1rem;
+    }
+
+    @media (min-width: 1100px) {
+      .header-desktop-nav {
+        display: flex;
+      }
+    }
+
+    .header-desktop-nav a {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-weight: 400;
+      color: var(--text-secondary);
+      position: relative;
+      padding: 0.25rem 0;
+    }
+
+    .header-desktop-nav a:hover, .header-desktop-nav a.active {
+      color: var(--text-primary);
+    }
+
+    .header-desktop-nav a.active::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: var(--bronze);
+    }
+
+    /* Center Brand Wordmark (LV Style Architectural Serif) */
+    .brand-wordmark {
+      text-align: center;
+      line-height: 1.05;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      user-select: none;
+    }
+
+    .brand-logo-img {
+      height: 48px;
+      width: auto;
+      max-width: 220px;
+      object-fit: contain;
+      transition: filter 0.3s ease, transform 0.25s ease;
+      display: block;
+    }
+
+    .brand-wordmark:hover .brand-logo-img {
+      transform: scale(1.02);
+    }
+
+    [data-theme="dark"] .brand-logo-img {
+      filter: invert(1) brightness(1.2);
+    }
+
+    .brand-wordmark .word-top {
+      font-family: var(--font-display);
+      font-size: clamp(1.2rem, 2.2vw, 1.75rem);
+      letter-spacing: 0.26em;
+      font-weight: 600;
+      display: block;
+      color: var(--text-primary);
+    }
+
+    .brand-wordmark .word-bottom {
+      font-size: clamp(0.58rem, 1vw, 0.72rem);
+      text-transform: uppercase;
+      letter-spacing: 0.38em;
+      color: var(--bronze);
+      font-weight: 500;
+      margin-top: 2px;
+      display: block;
+    }
+
+    /* Right Action Elements */
+    .header-right {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 1.25rem;
+    }
+
+    @media (min-width: 768px) {
+      .header-right {
+        gap: 1.6rem;
+      }
+    }
+
+    .header-action-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--text-primary);
+      position: relative;
+    }
+
+    .header-action-btn svg {
+      width: 18px;
+      height: 18px;
+      stroke-width: 1.3;
+      stroke: currentColor;
+    }
+
+    .badge-count {
+      font-size: 0.65rem;
+      background-color: var(--bronze);
+      color: #ffffff;
+      min-width: 16px;
+      height: 16px;
+      line-height: 16px;
+      text-align: center;
+      border-radius: 50%;
+      font-weight: 600;
+      padding: 0 4px;
+      display: inline-block;
+    }
+
+    .theme-toggle-btn {
+      padding: 4px;
+    }
+
+    /* ==========================================================================
+       FULL-SCREEN LUXURY CURTAIN MENU (LOUIS VUITTON EDITORIAL)
+       ========================================================================== */
+    .menu-curtain {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: var(--bg-primary);
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.4s ease, visibility 0.4s ease;
+      overflow-y: auto;
+    }
+
+    .menu-curtain.open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .menu-curtain-header {
+      height: var(--nav-height);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1.5rem;
+      border-bottom: 1px solid var(--border-color);
+      max-width: 1400px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    @media (min-width: 768px) {
+      .menu-curtain-header {
+        padding: 0 3rem;
+      }
+    }
+
+    .close-menu-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-weight: 500;
+    }
+
+    .menu-curtain-content {
+      flex: 1;
+      max-width: 1400px;
+      margin: 0 auto;
+      width: 100%;
+      padding: 3rem 1.5rem 5rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+
+    @media (min-width: 900px) {
+      .menu-curtain-content {
+        grid-template-columns: 1.2fr 0.8fr 1fr;
+        padding: 4rem 3rem 5rem;
+        gap: 4rem;
+      }
+    }
+
+    .curtain-col-title {
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      color: var(--bronze);
+      margin-bottom: 1.75rem;
+      display: block;
+      font-weight: 500;
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 0.5rem;
+    }
+
+    .curtain-nav-links {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .curtain-nav-links a {
+      font-family: var(--font-display);
+      font-size: clamp(1.4rem, 2.4vw, 2.1rem);
+      font-weight: 400;
+      color: var(--text-primary);
+      transition: transform 0.25s ease, color 0.25s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .curtain-nav-links a:hover {
+      color: var(--bronze);
+      transform: translateX(8px);
+    }
+
+    .curtain-nav-links a span.category-badge {
+      font-family: var(--font-body);
+      font-size: 0.7rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .curtain-secondary-links {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .curtain-secondary-links a {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--text-secondary);
+      font-weight: 400;
+    }
+
+    .curtain-secondary-links a:hover {
+      color: var(--text-primary);
+    }
+
+    .curtain-editorial-card {
+      background-color: var(--bg-surface);
+      padding: 2.25rem;
+      border: 1px solid var(--border-subtle);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* ==========================================================================
+       HERO (LOUIS VUITTON FULL-WIDTH EDITORIAL)
+       ========================================================================== */
+    .hero-section {
+      position: relative;
+      background-color: var(--bg-surface);
+      overflow: hidden;
+      border-bottom: 1px solid var(--border-color);
+      min-height: 85vh;
+      display: flex;
+      align-items: flex-end;
+      padding: 4rem 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .hero-section {
+        min-height: 90vh;
+        padding: 6rem 3rem;
+      }
+    }
+
+    .hero-backdrop {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: radial-gradient(circle at 65% 40%, rgba(156, 128, 90, 0.12) 0%, transparent 65%),
+                  linear-gradient(to top, var(--bg-primary) 0%, rgba(0, 0, 0, 0.2) 100%);
+      pointer-events: none;
+    }
+
+    /* Decorative Luxury Pattern Background */
+    .hero-pattern-bg {
+      position: absolute;
+      inset: 0;
+      opacity: 0.04;
+      background-image: radial-gradient(var(--text-primary) 1px, transparent 1px);
+      background-size: 24px 24px;
+      pointer-events: none;
+    }
+
+    .hero-silhouette-art {
+      position: absolute;
+      right: 5%;
+      bottom: 0;
+      height: 92%;
+      max-height: 780px;
+      width: auto;
+      z-index: 2;
+      opacity: 0.95;
+      filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.1));
+      pointer-events: none;
+      display: none;
+    }
+
+    @media (min-width: 900px) {
+      .hero-silhouette-art {
+        display: block;
+      }
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 5;
+      max-width: 720px;
+    }
+
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.4rem, 5.2vw, 4.4rem);
+      font-weight: 400;
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+      margin-bottom: 1.25rem;
+      color: var(--text-primary);
+    }
+
+    .hero-subtitle {
+      font-size: clamp(0.95rem, 1.4vw, 1.15rem);
+      color: var(--text-secondary);
+      font-weight: 300;
+      max-width: 520px;
+      margin-bottom: 2.5rem;
+      line-height: 1.6;
+    }
+
+    .hero-stacked-links {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.25rem;
+    }
+
+    @media (min-width: 540px) {
+      .hero-stacked-links {
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+      }
+    }
+
+    /* ==========================================================================
+       SECTION 2: EXPLORE A SELECTION OF THE MAISON'S CREATIONS (6 TILES)
+       ========================================================================== */
+    .selection-section {
+      padding: 6rem 0;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .section-header-centered {
+      text-align: center;
+      margin-bottom: 3.5rem;
+    }
+
+    .category-tiles-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    @media (min-width: 640px) {
+      .category-tiles-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .category-tiles-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+      }
+    }
+
+    .category-tile {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      position: relative;
+      overflow: hidden;
+      group: tile;
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition-base);
+    }
+
+    .category-tile:hover {
+      border-color: var(--bronze);
+      box-shadow: var(--shadow-subtle);
+    }
+
+    .category-tile-media {
+      position: relative;
+      aspect-ratio: 4 / 5;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(145deg, var(--bg-surface), var(--bg-secondary));
+    }
+
+    .category-tile-media svg {
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+      width: 82%;
+      height: 82%;
+    }
+
+    .category-tile:hover .category-tile-media svg {
+      transform: scale(1.04);
+    }
+
+    .category-tile-info {
+      padding: 1.75rem 1.5rem;
+      text-align: center;
+      background-color: var(--bg-primary);
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .category-tile-name {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      margin-bottom: 0.35rem;
+      color: var(--text-primary);
+    }
+
+    .category-tile-count {
+      font-size: 0.7rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    /* ==========================================================================
+       SECTION 3: HORIZONTAL PRODUCT RAILS (NEW ARRIVALS & EVERYDAY COTTON)
+       ========================================================================== */
+    .product-rail-section {
+      padding: 6rem 0;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .rail-header {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 2.75rem;
+    }
+
+    @media (min-width: 768px) {
+      .rail-header {
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+      }
+    }
+
+    .product-rail-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    @media (min-width: 1200px) {
+      .product-rail-container {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    /* Product Card Component */
+    .product-card {
+      background-color: var(--bg-primary);
+      border: 1px solid var(--border-subtle);
+      transition: var(--transition-base);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .product-card:hover {
+      border-color: var(--border-color);
+      box-shadow: var(--shadow-subtle);
+    }
+
+    .product-badge-flag {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      z-index: 10;
+      font-size: 0.62rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      padding: 0.35rem 0.65rem;
+      border: 1px solid var(--border-color);
+      font-weight: 500;
+    }
+
+    .product-wishlist-toggle {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      z-index: 10;
+      background-color: var(--bg-primary);
+      border: 1px solid var(--border-subtle);
+      width: 34px;
+      height: 34px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-primary);
+      transition: var(--transition-base);
+    }
+
+    .product-wishlist-toggle:hover, .product-wishlist-toggle.active {
+      color: var(--bronze);
+      border-color: var(--bronze);
+    }
+
+    .product-card-media {
+      aspect-ratio: 3 / 4;
+      background-color: var(--bg-surface);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .product-card-media svg {
+      width: 78%;
+      height: 78%;
+      transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .product-card:hover .product-card-media svg {
+      transform: scale(1.03);
+    }
+
+    .product-quick-action {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(18, 18, 18, 0.85);
+      backdrop-filter: blur(4px);
+      color: #ffffff;
+      padding: 0.75rem 1rem;
+      font-size: 0.68rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      text-align: center;
+      transform: translateY(100%);
+      transition: transform 0.25s ease;
+      font-weight: 500;
+    }
+
+    .product-card:hover .product-quick-action {
+      transform: translateY(0);
+    }
+
+    .product-card-details {
+      padding: 1.5rem 1.25rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .product-card-collection {
+      font-size: 0.65rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--bronze);
+      margin-bottom: 0.4rem;
+      font-weight: 500;
+    }
+
+    .product-card-name {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 400;
+      line-height: 1.3;
+      margin-bottom: 0.5rem;
+      color: var(--text-primary);
+    }
+
+    .product-card-name a:hover {
+      color: var(--bronze);
+    }
+
+    .product-card-price {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--text-primary);
+      margin-top: auto;
+      padding-top: 0.75rem;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+
+    .product-swatches-mini {
+      display: flex;
+      gap: 0.4rem;
+      margin-top: 0.75rem;
+    }
+
+    .swatch-mini {
+      width: 12px;
+      height: 12px;
+      border: 1px solid var(--border-color);
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    /* ==========================================================================
+       SECTION 4: SEEN ON INSTAGRAM (@raadhya_ethnica REEL-STYLE TILES)
+       ========================================================================== */
+    .instagram-section {
+      padding: 6rem 0;
+      background-color: var(--bg-surface);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .instagram-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 3.5rem;
+    }
+
+    .instagram-handle-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.85rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--bronze);
+      font-weight: 500;
+      margin-top: 0.5rem;
+    }
+
+    .instagram-handle-link svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .instagram-reels-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
+    }
+
+    @media (min-width: 768px) {
+      .instagram-reels-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+      }
+    }
+
+    .instagram-card {
+      background-color: var(--bg-primary);
+      border: 1px solid var(--border-subtle);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      position: relative;
+      transition: var(--transition-base);
+    }
+
+    .instagram-card:hover {
+      border-color: var(--bronze);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-dropdown);
+    }
+
+    .instagram-media-wrapper {
+      position: relative;
+      aspect-ratio: 9 / 16;
+      background: linear-gradient(135deg, #242220 0%, #161514 100%);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .instagram-media-wrapper svg {
+      width: 85%;
+      height: 85%;
+      filter: contrast(1.05);
+    }
+
+    .instagram-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.1) 60%, transparent 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1.25rem;
+      color: #ffffff;
+      opacity: 0.95;
+    }
+
+    .instagram-pill {
+      align-self: flex-start;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(6px);
+      padding: 0.35rem 0.75rem;
+      font-size: 0.6rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .instagram-card-caption {
+      font-size: 0.78rem;
+      line-height: 1.45;
+      font-weight: 300;
+      color: #f1f0ee;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin-bottom: 0.75rem;
+    }
+
+    .instagram-card-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--bronze-light);
+      font-weight: 500;
+    }
+
+    /* ==========================================================================
+       SECTION 5: THE MAISON RAADHYA ETHNICA (3 EDITORIAL TILES)
+       ========================================================================== */
+    .maison-section {
+      padding: 6rem 0;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .maison-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    @media (min-width: 900px) {
+      .maison-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .maison-tile {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      padding: 3rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 380px;
+      transition: var(--transition-base);
+    }
+
+    .maison-tile:hover {
+      border-color: var(--bronze);
+      background-color: var(--bg-secondary);
+    }
+
+    .maison-tile-number {
+      font-family: var(--font-display);
+      font-size: 1.75rem;
+      color: var(--bronze);
+      margin-bottom: 1.5rem;
+      display: block;
+    }
+
+    .maison-tile-title {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-bottom: 1rem;
+      color: var(--text-primary);
+    }
+
+    .maison-tile-body {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      font-weight: 300;
+      line-height: 1.65;
+      margin-bottom: 2rem;
+    }
+
+    /* ==========================================================================
+       SECTION 6: STATS & SERVICES STRIP
+       ========================================================================== */
+    .stats-section {
+      padding: 4.5rem 0;
+      background-color: var(--bg-surface);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      text-align: center;
+    }
+
+    @media (min-width: 900px) {
+      .stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .stat-item {
+      padding: 1rem;
+    }
+
+    .stat-value {
+      font-family: var(--font-display);
+      font-size: clamp(2.2rem, 3.8vw, 3.2rem);
+      font-weight: 400;
+      color: var(--text-primary);
+      display: block;
+      margin-bottom: 0.4rem;
+    }
+
+    .stat-label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--bronze);
+      font-weight: 500;
+    }
+
+    .services-strip {
+      padding: 4rem 0;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+
+    @media (min-width: 640px) {
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .services-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+      }
+    }
+
+    .service-card {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .service-card-icon {
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--border-color);
+      margin-bottom: 1.25rem;
+      color: var(--bronze);
+    }
+
+    .service-card-icon svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    .service-card-title {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: var(--text-primary);
+    }
+
+    .service-card-desc {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      font-weight: 300;
+      line-height: 1.5;
+    }
+
+    /* ==========================================================================
+       SECTION 7: PRIVATE LIST NEWSLETTER (10% OFF FIRST ORDER)
+       ========================================================================== */
+    .newsletter-section {
+      padding: 6rem 0;
+      background-color: var(--bg-surface);
+      border-bottom: 1px solid var(--border-color);
+      text-align: center;
+    }
+
+    .newsletter-container {
+      max-width: 620px;
+      margin: 0 auto;
+    }
+
+    .newsletter-form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-top: 2rem;
+    }
+
+    @media (min-width: 600px) {
+      .newsletter-form {
+        flex-direction: row;
+      }
+    }
+
+    .luxury-input {
+      flex: 1;
+      padding: 1rem 1.25rem;
+      font-family: inherit;
+      font-size: 0.85rem;
+      background-color: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      color: var(--text-primary);
+      border-radius: 0;
+      transition: var(--transition-base);
+    }
+
+    .luxury-input:focus {
+      border-color: var(--bronze);
+      outline: none;
+    }
+
+    .newsletter-disclaimer {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      margin-top: 1rem;
+      line-height: 1.5;
+    }
+
+    /* ==========================================================================
+       SITEWIDE PROMO FILM BAND (ABOVE FOOTER)
+       ========================================================================== */
+    .promo-film-band {
+      background-color: #0d0d0d;
+      color: #ffffff;
+      border-top: 1px solid #222222;
+      border-bottom: 1px solid #222222;
+      position: relative;
+      overflow: hidden;
+      padding: 3.5rem 0;
+    }
+
+    .promo-film-inner {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    @media (min-width: 900px) {
+      .promo-film-inner {
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 4rem;
+      }
+    }
+
+    .film-player-frame {
+      background: #161514;
+      border: 1px solid #2e2c29;
+      aspect-ratio: 16 / 9;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .film-scene-art {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.8s ease;
+    }
+
+    .film-controls-bar {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);
+      padding: 0.75rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+    }
+
+    .film-progress-rail {
+      flex: 1;
+      height: 2px;
+      background: rgba(255, 255, 255, 0.2);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .film-progress-fill {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 0%;
+      background: var(--bronze-light);
+      transition: width 0.1s linear;
+    }
+
+    .film-text-info .eyebrow {
+      color: var(--bronze-light);
+    }
+
+    .film-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+      margin-bottom: 1rem;
+      font-weight: 400;
+    }
+
+    .film-caption-active {
+      font-size: 0.9rem;
+      color: #b5b2ac;
+      font-weight: 300;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+
+    /* ==========================================================================
+       FOOTER (LOUIS VUITTON ARCHITECTURAL STYLE)
+       ========================================================================== */
+    footer.site-footer {
+      background-color: var(--bg-primary);
+      border-top: 1px solid var(--border-color);
+      padding: 5rem 0 3rem;
+      margin-top: auto;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      margin-bottom: 4rem;
+    }
+
+    @media (min-width: 600px) {
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .footer-grid {
+        grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+        gap: 3.5rem;
+      }
+    }
+
+    .footer-col-title {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      color: var(--text-primary);
+    }
+
+    .footer-links-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+
+    .footer-links-list a {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      font-weight: 300;
+      transition: var(--transition-base);
+    }
+
+    .footer-links-list a:hover {
+      color: var(--bronze);
+      padding-left: 4px;
+    }
+
+    .boutique-details p {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      font-weight: 300;
+      line-height: 1.6;
+      margin-bottom: 0.6rem;
+    }
+
+    .owner-confirm-pill {
+      display: inline-block;
+      font-size: 0.62rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      background-color: var(--bronze-subtle);
+      color: var(--bronze-dark);
+      padding: 0.35rem 0.65rem;
+      border: 1px solid var(--bronze-light);
+      margin-top: 0.5rem;
+      font-weight: 500;
+    }
+
+    .social-icons-row {
+      display: flex;
+      gap: 1.25rem;
+      margin-top: 1.25rem;
+    }
+
+    .social-icon-btn {
+      width: 38px;
+      height: 38px;
+      border: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-primary);
+      transition: var(--transition-base);
+    }
+
+    .social-icon-btn:hover {
+      border-color: var(--bronze);
+      color: var(--bronze);
+      transform: translateY(-2px);
+    }
+
+    .social-icon-btn svg {
+      width: 17px;
+      height: 17px;
+    }
+
+    .footer-bottom-bar {
+      border-top: 1px solid var(--border-color);
+      padding-top: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    @media (min-width: 768px) {
+      .footer-bottom-bar {
+        flex-direction: row;
+      }
+    }
+
+    .payment-badges-row {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      font-size: 0.68rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: var(--text-secondary);
+    }
+
+    /* ==========================================================================
+       FLOATING WHATSAPP ATELIER CONCIERGE
+       ========================================================================== */
+    .whatsapp-concierge-float {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 85;
+      background-color: #121212;
+      color: #ffffff;
+      border: 1px solid var(--bronze);
+      padding: 0.75rem 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+      cursor: pointer;
+      transition: var(--transition-base);
+    }
+
+    .whatsapp-concierge-float:hover {
+      transform: translateY(-3px);
+      background-color: #1f1d1a;
+      border-color: var(--bronze-light);
+    }
+
+    .whatsapp-dot {
+      width: 8px;
+      height: 8px;
+      background-color: #25d366;
+      border-radius: 50%;
+      box-shadow: 0 0 8px #25d366;
+    }
+
+    .whatsapp-text {
+      font-size: 0.7rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    /* ==========================================================================
+       SHOP CATALOGUE PAGE (#shop)
+       ========================================================================== */
+    .shop-view-header {
+      padding: 4rem 0 2.5rem;
+      border-bottom: 1px solid var(--border-color);
+      text-align: center;
+    }
+
+    .shop-controls-bar {
+      padding: 1.25rem 0;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.25rem;
+      font-size: 0.75rem;
+    }
+
+    .filter-chips-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .filter-chip {
+      padding: 0.45rem 1rem;
+      border: 1px solid var(--border-color);
+      font-size: 0.68rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      background: var(--bg-primary);
+      transition: var(--transition-base);
+    }
+
+    .filter-chip.active, .filter-chip:hover {
+      background-color: var(--text-primary);
+      color: var(--bg-primary);
+      border-color: var(--text-primary);
+    }
+
+    .sort-select-wrapper select {
+      padding: 0.5rem 1.2rem;
+      border: 1px solid var(--border-color);
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: inherit;
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .shop-grid-container {
+      padding: 3.5rem 0 6rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    @media (min-width: 1024px) {
+      .shop-grid-container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (min-width: 1300px) {
+      .shop-grid-container {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    /* ==========================================================================
+       PRODUCT DETAIL VIEW (#product)
+       ========================================================================== */
+    .pdp-section {
+      padding: 3.5rem 0 6rem;
+    }
+
+    .pdp-breadcrumbs {
+      font-size: 0.7rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 2.5rem;
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .pdp-breadcrumbs a:hover {
+      color: var(--bronze);
+    }
+
+    .pdp-layout {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+
+    @media (min-width: 992px) {
+      .pdp-layout {
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 5rem;
+      }
+    }
+
+    .pdp-gallery-wrap {
+      position: sticky;
+      top: 100px;
+    }
+
+    .pdp-main-image-box {
+      aspect-ratio: 4 / 5;
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pdp-main-image-box svg {
+      width: 82%;
+      height: 82%;
+      transition: transform 0.4s ease;
+    }
+
+    .pdp-thumbnails-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .pdp-thumb-btn {
+      aspect-ratio: 1;
+      border: 1px solid var(--border-color);
+      background-color: var(--bg-surface);
+      padding: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0.7;
+      transition: var(--transition-base);
+    }
+
+    .pdp-thumb-btn.active, .pdp-thumb-btn:hover {
+      opacity: 1;
+      border-color: var(--bronze);
+    }
+
+    .pdp-details-wrap {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .pdp-title {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 3.2vw, 2.75rem);
+      font-weight: 400;
+      line-height: 1.15;
+      margin-bottom: 0.75rem;
+    }
+
+    .pdp-price {
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: var(--text-primary);
+      margin-bottom: 1.5rem;
+    }
+
+    .pdp-description-lead {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin-bottom: 2.25rem;
+      font-weight: 300;
+    }
+
+    .pdp-option-group {
+      margin-bottom: 2rem;
+      border-top: 1px solid var(--border-color);
+      padding-top: 1.5rem;
+    }
+
+    .pdp-option-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-weight: 500;
+    }
+
+    .swatches-selector {
+      display: flex;
+      gap: 0.85rem;
+    }
+
+    .swatch-btn {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: 1px solid var(--border-color);
+      position: relative;
+      padding: 2px;
+      transition: var(--transition-base);
+    }
+
+    .swatch-btn.active {
+      outline: 2px solid var(--bronze);
+      outline-offset: 2px;
+    }
+
+    .size-selector-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 0.5rem;
+    }
+
+    .size-btn {
+      padding: 0.75rem 0;
+      text-align: center;
+      border: 1px solid var(--border-color);
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      font-weight: 500;
+      background-color: var(--bg-primary);
+      transition: var(--transition-base);
+    }
+
+    .size-btn.active, .size-btn:hover {
+      background-color: var(--text-primary);
+      color: var(--bg-primary);
+      border-color: var(--text-primary);
+    }
+
+    .atelier-inventory-note {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--bronze);
+      margin-bottom: 2rem;
+      font-weight: 500;
+    }
+
+    .pdp-actions-row {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    @media (min-width: 500px) {
+      .pdp-actions-row {
+        flex-direction: row;
+      }
+      .pdp-actions-row .btn-solid {
+        flex: 1;
+      }
+    }
+
+    .pdp-accordion-group {
+      border-top: 1px solid var(--border-color);
+      margin-top: 1rem;
+    }
+
+    .accordion-item {
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .accordion-header {
+      width: 100%;
+      padding: 1.25rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-weight: 500;
+      text-align: left;
+    }
+
+    .accordion-body {
+      padding-bottom: 1.5rem;
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      font-weight: 300;
+      display: none;
+    }
+
+    .accordion-body.open {
+      display: block;
+    }
+
+    /* ==========================================================================
+       SHOPPING BAG VIEW (#bag) & WISHLIST (#wishlist)
+       ========================================================================== */
+    .bag-view-section {
+      padding: 4rem 0 6rem;
+    }
+
+    .shipping-progress-box {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      padding: 1.5rem;
+      margin-bottom: 2.5rem;
+      text-align: center;
+    }
+
+    .progress-bar-track {
+      height: 4px;
+      background-color: var(--border-color);
+      margin-top: 0.75rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .progress-bar-value {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background-color: var(--bronze);
+      transition: width 0.4s ease;
+    }
+
+    .bag-layout {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+
+    @media (min-width: 992px) {
+      .bag-layout {
+        grid-template-columns: 1.3fr 0.7fr;
+        gap: 4rem;
+      }
+    }
+
+    .bag-items-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+    }
+
+    .bag-item-card {
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      gap: 1.5rem;
+      padding-bottom: 1.75rem;
+      border-bottom: 1px solid var(--border-subtle);
+      align-items: center;
+    }
+
+    .bag-item-media {
+      aspect-ratio: 1;
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem;
+    }
+
+    .bag-item-info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .bag-item-qty-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 0.75rem;
+    }
+
+    .qty-stepper {
+      display: inline-flex;
+      border: 1px solid var(--border-color);
+    }
+
+    .qty-stepper button {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+    }
+
+    .qty-stepper span {
+      width: 36px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      border-left: 1px solid var(--border-color);
+      border-right: 1px solid var(--border-color);
+    }
+
+    .bag-summary-panel {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      padding: 2.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .summary-line {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+
+    .summary-line.total {
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: var(--text-primary);
+      border-top: 1px solid var(--border-color);
+      padding-top: 1rem;
+    }
+
+    /* ==========================================================================
+       EDITORIAL / ABOUT MAISON VIEW (#maison)
+       ========================================================================== */
+    .editorial-hero {
+      padding: 6rem 0 4rem;
+      text-align: center;
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    .editorial-content-block {
+      padding: 3rem 0 6rem;
+    }
+
+    .story-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      margin-bottom: 5rem;
+      align-items: center;
+    }
+
+    @media (min-width: 900px) {
+      .story-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+      }
+    }
+
+    .values-cards-row {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    @media (min-width: 768px) {
+      .values-cards-row {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .value-card {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      padding: 2.5rem 1.75rem;
+    }
+
+    /* ==========================================================================
+       CONTACT & ATELIER CONSULTATION VIEW (#contact)
+       ========================================================================== */
+    .contact-layout {
+      padding: 4rem 0 6rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 4rem;
+    }
+
+    @media (min-width: 900px) {
+      .contact-layout {
+        grid-template-columns: 1fr 1.2fr;
+        gap: 5rem;
+      }
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+
+    /* ==========================================================================
+       CLIENT CARE POLICIES VIEW (#care)
+       ========================================================================== */
+    .care-tabs-nav {
+      display: flex;
+      flex-wrap: wrap;
+      border-bottom: 1px solid var(--border-color);
+      margin-bottom: 3rem;
+    }
+
+    .care-tab-btn {
+      padding: 1rem 1.75rem;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-weight: 500;
+      color: var(--text-secondary);
+      border-bottom: 2px solid transparent;
+      transition: var(--transition-base);
+    }
+
+    .care-tab-btn.active {
+      color: var(--text-primary);
+      border-bottom-color: var(--bronze);
+    }
+
+    .care-article-body {
+      max-width: 840px;
+      font-size: 0.95rem;
+      line-height: 1.8;
+      color: var(--text-secondary);
+      font-weight: 300;
+    }
+
+    .care-article-body h3 {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      color: var(--text-primary);
+      margin: 2rem 0 1rem;
+      font-weight: 400;
+    }
+
+    .care-article-body p {
+      margin-bottom: 1.25rem;
+    }
+
+    /* ==========================================================================
+       ACCOUNT CLIENT SUITE VIEW (#account)
+       ========================================================================== */
+    .auth-card-wrap {
+      max-width: 520px;
+      margin: 4rem auto 6rem;
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      padding: 3rem 2.25rem;
+    }
+
+    .auth-tab-switch {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .auth-tab-btn {
+      padding: 0.75rem;
+      text-align: center;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-weight: 500;
+      color: var(--text-secondary);
+      border-bottom: 2px solid transparent;
+    }
+
+    .auth-tab-btn.active {
+      color: var(--text-primary);
+      border-bottom-color: var(--bronze);
+    }
+
+    /* ==========================================================================
+       TOAST NOTIFICATIONS & MODALS
+       ========================================================================== */
+    .toast-notification {
+      position: fixed;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background-color: #121212;
+      color: #ffffff;
+      border: 1px solid var(--bronze);
+      padding: 0.9rem 1.8rem;
+      font-size: 0.75rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      z-index: 1000;
+      opacity: 0;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      pointer-events: none;
+    }
+
+    .toast-notification.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    /* Modal Backdrop & Dialog */
+    .luxury-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(4px);
+      z-index: 990;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .luxury-modal-backdrop.open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .luxury-modal-dialog {
+      background-color: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      max-width: 600px;
+      width: 100%;
+      padding: 2.5rem;
+      position: relative;
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+
+    .modal-close-cross {
+      position: absolute;
+      top: 1.25rem;
+      right: 1.25rem;
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+    }
+
+    /* Size Chart Table in Modal */
+    .size-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 0.8rem;
+    }
+
+    .size-table th, .size-table td {
+      padding: 0.75rem;
+      border: 1px solid var(--border-color);
+      text-align: center;
+    }
+
+    .size-table th {
+      background-color: var(--bg-surface);
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       SITEWIDE ROTATING ANNOUNCEMENT BAR
+       ========================================================================== -->
+  <aside class="announcement-bar" id="announcement-bar" aria-label="Atelier Announcements">
+    <div class="announcement-item active" data-index="0">
+      <span>Complimentary worldwide shipping on orders above A$150</span>
+      <a href="#shop">Explore Curations</a>
+    </div>
+    <div class="announcement-item" data-index="1">
+      <span>The Festive Edit: Handcrafted Silk & Zari Kurtas Now Unveiled</span>
+      <a href="#shop?category=festive">Discover Now</a>
+    </div>
+    <div class="announcement-item" data-index="2">
+      <span>Privileged Access: 10% off your premier order with code <strong>WELCOME10</strong></span>
+      <a href="#maison">Join Invitation</a>
+    </div>
+    <div class="announcement-item" data-index="3">
+      <span>Follow our atelier creations live on Instagram <strong>@raadhya_ethnica</strong></span>
+      <a href="https://www.instagram.com/raadhya_ethnica/" target="_blank" rel="noopener">View Reel Stories</a>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       SITE HEADER (CENTERED WORDMARK & LUXURY UTILITY CONTROLS)
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="header-inner">
+      
+      <!-- Left: Menu & Key Links -->
+      <div class="header-left">
+        <button class="menu-trigger" id="open-menu-btn" aria-label="Open Maison Navigation">
+          <span class="hamburger-icon" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <span>Menu</span>
+        </button>
+
+        <nav class="header-desktop-nav" aria-label="Primary Categories">
+          <a href="#shop?category=all">Collections</a>
+          <a href="#shop?category=cotton">Cotton</a>
+          <a href="#shop?category=designer">Designer</a>
+          <a href="#shop?category=festive">Festive</a>
+          <a href="#maison">The Maison</a>
+        </nav>
+      </div>
+
+      <!-- Center: Official Logo (with luxury sizing and theme adaptation) -->
+      <a href="#home" class="brand-wordmark" aria-label="Raadhya Ethnica Home">
+        <img src="logo.png" alt="Raadhya Ethnica" class="brand-logo-img">
+      </a>
+
+      <!-- Right: Client Utility Actions -->
+      <div class="header-right">
+        <!-- Light / Dark Theme Switch -->
+        <button class="header-action-btn theme-toggle-btn" id="theme-toggle" aria-label="Toggle Light and Dark Theme">
+          <svg id="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <circle cx="12" cy="12" r="5"></circle>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
+          </svg>
+        </button>
+
+        <!-- Account -->
+        <a href="#account" class="header-action-btn" aria-label="Client Account">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </a>
+
+        <!-- Wishlist -->
+        <a href="#wishlist" class="header-action-btn" aria-label="View Wishlist">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="badge-count" id="wishlist-counter">0</span>
+        </a>
+
+        <!-- Shopping Bag -->
+        <a href="#bag" class="header-action-btn" aria-label="View Shopping Bag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="badge-count" id="bag-counter">0</span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       FULL-SCREEN CURTAIN MENU (LOUIS VUITTON EDITORIAL)
+       ========================================================================== -->
+  <div class="menu-curtain" id="menu-curtain" role="dialog" aria-modal="true" aria-label="Maison Navigation Menu">
+    <div class="menu-curtain-header">
+      <a href="#home" class="brand-wordmark" onclick="toggleMenu(false)">
+        <img src="logo.png" alt="Raadhya Ethnica" class="brand-logo-img" style="height: 40px;">
+      </a>
+      <button class="close-menu-btn" id="close-menu-btn" aria-label="Close Navigation Menu">
+        <span>Close</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="menu-curtain-content">
+      <!-- Column 1: Kurta Collections -->
+      <div>
+        <span class="curtain-col-title">The Kurta Collections</span>
+        <nav class="curtain-nav-links">
+          <a href="#shop?category=all" onclick="toggleMenu(false)">All Products <span class="category-badge">Catalogue</span></a>
+          <a href="#shop?category=cotton" onclick="toggleMenu(false)">Cotton Kurtas <span class="category-badge">Breathable Pure</span></a>
+          <a href="#shop?category=designer" onclick="toggleMenu(false)">Designer Kurtas <span class="category-badge">Artisan Zardozi</span></a>
+          <a href="#shop?category=festive" onclick="toggleMenu(false)">Festive Kurtas <span class="category-badge">Heritage Brocade</span></a>
+          <a href="#shop?category=office" onclick="toggleMenu(false)">Office Wear <span class="category-badge">Contemporary Tailoring</span></a>
+          <a href="#shop?category=casual" onclick="toggleMenu(false)">Casual Kurtas <span class="category-badge">Everyday Silhouette</span></a>
+        </nav>
+      </div>
+
+      <!-- Column 2: The Maison & Client Care -->
+      <div>
+        <span class="curtain-col-title">The Maison & Services</span>
+        <nav class="curtain-secondary-links">
+          <a href="#maison" onclick="toggleMenu(false)">Our Heritage & Story</a>
+          <a href="#contact" onclick="toggleMenu(false)">Kathmandu Atelier & Contact</a>
+          <a href="#care?tab=shipping" onclick="toggleMenu(false)">Boutique Shipping Policy</a>
+          <a href="#care?tab=returns" onclick="toggleMenu(false)">7-Day Atelier Returns</a>
+          <a href="#care?tab=privacy" onclick="toggleMenu(false)">Privacy Policy</a>
+          <a href="#care?tab=terms" onclick="toggleMenu(false)">Terms of Service</a>
+          <a href="#account" onclick="toggleMenu(false)">Client Sign In / Register</a>
+          <a href="#wishlist" onclick="toggleMenu(false)">Saved Pieces</a>
+        </nav>
+      </div>
+
+      <!-- Column 3: Atelier Consultation & Social -->
+      <div class="curtain-editorial-card">
+        <div>
+          <span class="eyebrow">Kathmandu Atelier</span>
+          <h4 style="font-family: var(--font-display); font-size: 1.4rem; font-weight: 400; margin-bottom: 0.75rem;">Private Client Advisory</h4>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem; font-weight: 300;">
+            Our stylists in Kathmandu provide bespoke sizing guidance, fabric previews, and private international order assistance via WhatsApp.
+          </p>
+          <a href="https://wa.me/9779869100969?text=Hi!%20I'm%20interested%20in%20your%20kurtas%20collection." target="_blank" rel="noopener" class="btn btn-solid" style="width: 100%;">
+            Contact Atelier Advisor
+          </a>
+        </div>
+        <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border-color);">
+          <span style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.16em; color: var(--bronze); display: block; margin-bottom: 0.5rem;">Official Instagram</span>
+          <a href="https://www.instagram.com/raadhya_ethnica/" target="_blank" rel="noopener" style="font-size: 0.85rem; color: var(--text-primary); font-weight: 500;">
+            @raadhya_ethnica &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       DYNAMIC VIEW ROUTING CONTAINER (HASH ROUTED)
+       ========================================================================== -->
+  <main id="app-view-root" role="main"></main>
+
+  <!-- ==========================================================================
+       SITEWIDE PROMO FILM BAND (Muted looping editorial film reel)
+       ========================================================================== -->
+  <section class="promo-film-band" id="promo-film-section" aria-label="Maison Cinema & Video Stories">
+    <div class="container">
+      <div class="promo-film-inner">
+        
+        <!-- Video / Animated Canvas Scene Frame -->
+        <div class="film-player-frame" id="film-player-frame">
+          <div class="film-scene-art" id="film-scene-art">
+            <!-- Dynamic SVG Scene Art rendered via JS -->
+          </div>
+          
+          <div class="film-controls-bar">
+            <button id="toggle-film-playback" style="color: #ffffff; display: flex; align-items: center; gap: 0.4rem;">
+              <span id="film-play-icon">&#10074;&#10074;</span>
+              <span id="film-play-text">Pause</span>
+            </button>
+            <div class="film-progress-rail">
+              <div class="film-progress-fill" id="film-progress-bar"></div>
+            </div>
+            <span id="film-counter-text" style="color: #999;">01 / 03</span>
+          </div>
+        </div>
+
+        <!-- Video Description & Instagram Verification -->
+        <div class="film-text-info">
+          <span class="eyebrow">Atelier In Motion &middot; Kathmandu</span>
+          <h2 class="film-title" id="film-active-title">The Drape of Chanderi Silk</h2>
+          <p class="film-caption-active" id="film-active-caption">
+            Captured on location at our Kathmandu atelier: Model wearing the handcrafted Festive Gulab Kurta featuring pure handloom weave and antique zardozi cuffs.
+          </p>
+          <div style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: center;">
+            <a href="https://www.instagram.com/raadhya_ethnica/" target="_blank" rel="noopener" class="btn btn-outline" style="border-color: #555; color: #ffffff;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="margin-right: 6px;">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+              Watch Reels on Instagram
+            </a>
+            <span style="font-size: 0.72rem; color: #777; letter-spacing: 0.1em; text-transform: uppercase;">
+              Muted &middot; Looping &middot; High Definition
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SITE FOOTER (LOUIS VUITTON EDITORIAL STRUCTURE)
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Column 1: Brand & Atelier Address -->
+        <div class="boutique-details">
+          <a href="#home" class="brand-wordmark" style="align-items: flex-start; margin-bottom: 1.5rem;">
+            <img src="logo.png" alt="Raadhya Ethnica" class="brand-logo-img" style="height: 52px;">
+          </a>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.25rem;">
+            Authentic Indian Ethnic Wear. Crafted with passion and elegance, celebrating every woman, every occasion.
+          </p>
+          <p><strong>Kathmandu Atelier:</strong> Kathmandu, Nepal</p>
+          <p><strong>Concierge:</strong> hello@raadhyaethnica.com</p>
+          <p><strong>WhatsApp:</strong> +977 9869100969</p>
+          <p><strong>Hours:</strong> Mon – Sat 10:00 AM – 7:00 PM (NPT)</p>
+          <span class="owner-confirm-pill">Owner Verification Note: Contact details confirmed for Kathmandu atelier.</span>
+        </div>
+
+        <!-- Column 2: Collections -->
+        <div>
+          <h4 class="footer-col-title">Collections</h4>
+          <ul class="footer-links-list">
+            <li><a href="#shop?category=all">All Products</a></li>
+            <li><a href="#shop?category=cotton">Cotton Kurtas</a></li>
+            <li><a href="#shop?category=designer">Designer Kurtas</a></li>
+            <li><a href="#shop?category=festive">Festive Kurtas</a></li>
+            <li><a href="#shop?category=office">Office Wear</a></li>
+            <li><a href="#shop?category=casual">Casual Kurtas</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Client Care & Policies -->
+        <div>
+          <h4 class="footer-col-title">Client Care</h4>
+          <ul class="footer-links-list">
+            <li><a href="#care?tab=shipping">Shipping & Complimentary Delivery</a></li>
+            <li><a href="#care?tab=returns">7-Day Atelier Returns & Refunds</a></li>
+            <li><a href="#care?tab=privacy">Privacy Policy</a></li>
+            <li><a href="#care?tab=terms">Terms of Service</a></li>
+            <li><a href="#contact">Atelier Inquiries & Custom Orders</a></li>
+            <li><a href="#account">Client Profile & Order Tracking</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Private Invitation & Social -->
+        <div>
+          <h4 class="footer-col-title">The Maison Network</h4>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.25rem; font-weight: 300;">
+            Follow the latest collections, runway reels, and behind-the-scenes handloom craftsmanship from Nepal.
+          </p>
+          <div class="social-icons-row">
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/raadhya_ethnica/" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Raadhya Ethnica on Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <!-- WhatsApp Direct -->
+            <a href="https://wa.me/9779869100969?text=Hi!%20I'm%20interested%20in%20your%20kurtas%20collection." target="_blank" rel="noopener" class="social-icon-btn" aria-label="Direct WhatsApp Concierge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+            </a>
+            <!-- Email -->
+            <a href="mailto:hello@raadhyaethnica.com" class="social-icon-btn" aria-label="Email Client Concierge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; <span id="current-year">2026</span> RAADHYA ETHNICA. All rights reserved. Kathmandu, Nepal.
+        </div>
+        <div class="payment-badges-row">
+          <span>Encrypted Gateway:</span>
+          <span>Visa</span>
+          <span>Mastercard</span>
+          <span>PayPal</span>
+          <span>Stripe</span>
+          <span>(A$ AUD)</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       FLOATING WHATSAPP ATELIER CONCIERGE BUTTON
+       ========================================================================== -->
+  <a href="https://wa.me/9779869100969?text=Hi!%20I'm%20interested%20in%20your%20kurtas%20collection." target="_blank" rel="noopener" class="whatsapp-concierge-float" aria-label="Direct WhatsApp Concierge Chat">
+    <div class="whatsapp-dot"></div>
+    <span class="whatsapp-text">Atelier Advisor</span>
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+    </svg>
+  </a>
+
+  <!-- ==========================================================================
+       TOAST NOTIFICATION COMPONENT
+       ========================================================================== -->
+  <div class="toast-notification" id="toast-notification" role="status" aria-live="polite">
+    Piece added to your shopping bag
+  </div>
+
+  <!-- ==========================================================================
+       LUXURY MODAL: SIZE GUIDE & CHECKOUT PREVIEW
+       ========================================================================== -->
+  <div class="luxury-modal-backdrop" id="luxury-modal" role="dialog" aria-modal="true">
+    <div class="luxury-modal-dialog" id="luxury-modal-body">
+      <!-- Dynamic modal content injected by JS -->
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       APPLICATION LOGIC & CORE ARCHITECTURE
+       ========================================================================== -->
+  <script>
+    /* ==========================================================================
+       CENTRAL BRAND CONFIGURATION BLOCK
+       (All details, real WhatsApp, Kathmandu atelier, Instagram posts, sample catalogue)
+       ========================================================================== */
+    const SITE_CONFIG = {
+      brand: {
+        name: "Raadhya Ethnica",
+        tagline: "Authentic Indian Ethnic Wear. Crafted with passion and elegance, celebrating every woman, every occasion.",
+        location: "Kathmandu, Nepal",
+        email: "hello@raadhyaethnica.com",
+        whatsappPhone: "+977 9869100969",
+        whatsappLink: "https://wa.me/9779869100969?text=Hi!%20I'm%20interested%20in%20your%20kurtas%20collection.",
+        hours: "Mon – Sat 10:00 AM – 7:00 PM (NPT)",
+        replyTime: "Replies within 24 hours",
+        currencySymbol: "A$",
+        freeShippingThreshold: 150.00,
+        discountFirstOrderPct: 10,
+        discountPromoCode: "WELCOME10",
+        instagramHandle: "@raadhya_ethnica",
+        instagramUrl: "https://www.instagram.com/raadhya_ethnica/"
+      },
+      stats: [
+        { label: "Unique Designs", value: "500+" },
+        { label: "Happy Customers", value: "10K+" },
+        { label: "Average Rating", value: "4.8" },
+        { label: "Authentic Fabrics", value: "100%" }
+      ],
+      trustPoints: [
+        { title: "Encrypted Payment", desc: "Visa, Mastercard, PayPal & Stripe with 256-bit bank grade encryption." },
+        { title: "Complimentary Delivery", desc: "Complimentary worldwide express shipping on orders over A$150." },
+        { title: "7-Day Atelier Returns", desc: "Effortless returns and bespoke size exchanges within seven days." },
+        { title: "Certified Authenticity", desc: "Every garment handpicked and verified for pure textile purity." }
+      ],
+      categories: [
+        { id: "all", name: "All Products", subtitle: "The Complete Atelier Archive", count: "500+ Designs" },
+        { id: "cotton", name: "Cotton Kurtas", subtitle: "Pure Chanderi & Mulmul", count: "120 Pieces" },
+        { id: "designer", name: "Designer Kurtas", subtitle: "Zardozi & Antique Weaves", count: "95 Pieces" },
+        { id: "festive", name: "Festive Kurtas", subtitle: "Royal Silk & Heritage Brocade", count: "140 Pieces" },
+        { id: "office", name: "Office Wear", subtitle: "Refined Pintuck & Clean Silhouettes", count: "80 Pieces" },
+        { id: "casual", name: "Casual Kurtas", subtitle: "Bagh & Indigo Handblock Prints", count: "110 Pieces" }
+      ],
+      /* Real Instagram Posts Config (Direct URLs to @raadhya_ethnica posts) */
+      instagramPosts: [
+        {
+          id: "ig-1",
+          caption: "Handcrafted Festive Gulab: Raw silk kurta with antique zardozi sleeve borders, perfected in Kathmandu.",
+          postUrl: "https://www.instagram.com/raadhya_ethnica/",
+          date: "Seasonal Atelier Edit",
+          modelSilhouette: "festive-red",
+          likes: "1,420"
+        },
+        {
+          id: "ig-2",
+          caption: "Breathable pure Chanderi mulmul in soft ivory with subtle mirror-work details for everyday elegance.",
+          postUrl: "https://www.instagram.com/raadhya_ethnica/",
+          date: "Daywear Series",
+          modelSilhouette: "cotton-ivory",
+          likes: "980"
+        },
+        {
+          id: "ig-3",
+          caption: "Royal Peacock Blue brocade kurta styled with tailored straight trousers. Celebrating cultural heritage.",
+          postUrl: "https://www.instagram.com/raadhya_ethnica/",
+          date: "Editorial Spotlight",
+          modelSilhouette: "designer-blue",
+          likes: "2,150"
+        },
+        {
+          id: "ig-4",
+          caption: "Minimalist office kurtas crafted from slate grey Tussar silk. Effortless poise from 10AM meetings to evening dinners.",
+          postUrl: "https://www.instagram.com/raadhya_ethnica/",
+          date: "Modern Silhouette",
+          modelSilhouette: "office-slate",
+          likes: "1,110"
+        }
+      ],
+      /* Muted Looping Video Film Band Config */
+      promoVideos: [
+        {
+          title: "The Drape of Chanderi Silk",
+          caption: "Captured on location at our Kathmandu atelier: Model wearing the handcrafted Festive Gulab Kurta featuring pure handloom weave and antique zardozi cuffs.",
+          colorHex: "#8B263E",
+          sceneType: "sway-flow",
+          url: "https://www.instagram.com/raadhya_ethnica/"
+        },
+        {
+          title: "Light & Breathable Mulmul Weaves",
+          caption: "Hand-spinning pure organic cotton fibers. Designed for warm summer afternoons and effortless poise in the boardroom.",
+          colorHex: "#5B7065",
+          sceneType: "spinning-loom",
+          url: "https://www.instagram.com/raadhya_ethnica/"
+        },
+        {
+          title: "The Royal Banarasi Brocade Cut",
+          caption: "Intricate metallic gold thread woven into pure midnight-navy silk. An iconic heirloom piece for festive celebrations.",
+          colorHex: "#2B3A67",
+          sceneType: "gold-shimmer",
+          url: "https://www.instagram.com/raadhya_ethnica/"
+        }
+      ],
+      /* Sample Master Catalogue (Placeholders clearly replaceable with real boutique inventory) */
+      products: [
+        {
+          id: "re-101",
+          name: "Gulab Zardozi Raw Silk Kurta",
+          collection: "Festive Kurtas",
+          category: "festive",
+          price: 185.00,
+          rating: 4.9,
+          badge: "New Arrival",
+          description: "An homage to regal Indian heritage, tailored in pure raw silk with fine zardozi gold threadwork on the neckline and sleeve cuffs. Designed to celebrate every woman with quiet majesty.",
+          fabric: "100% Pure Mulberry Raw Silk with metallic antique zari embellishment.",
+          care: "Strictly dry clean only. Store wrapped in pure muslin cloth.",
+          sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+          defaultColor: "Crimson",
+          colors: [
+            { name: "Crimson", hex: "#8B263E", garmentTone: "#8B263E" },
+            { name: "Emerald", hex: "#1D4E3E", garmentTone: "#1D4E3E" },
+            { name: "Midnight Navy", hex: "#1C2D42", garmentTone: "#1C2D42" }
+          ]
+        },
+        {
+          id: "re-102",
+          name: "Chanderi Ivory Mulmul Kurta",
+          collection: "Cotton Kurtas",
+          category: "cotton",
+          price: 135.00,
+          rating: 4.8,
+          badge: "Bestseller",
+          description: "Featherlight Chanderi cotton blended with soft mulmul lining. Features delicate hand-tucked pintucks and pearl button fastenings along the placket.",
+          fabric: "Handwoven Chanderi Cotton with pure cotton mulmul lining.",
+          care: "Gentle hand wash in cold water with mild detergent. Line dry in shade.",
+          sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+          defaultColor: "Ivory Pearl",
+          colors: [
+            { name: "Ivory Pearl", hex: "#F7F5F0", garmentTone: "#F0ECE1" },
+            { name: "Blush Sand", hex: "#EAD7CE", garmentTone: "#E2CCC2" },
+            { name: "Sage Mist", hex: "#C8D3C5", garmentTone: "#BCCAB8" }
+          ]
+        },
+        {
+          id: "re-103",
+          name: "Banarasi Weave Angrakha Kurta",
+          collection: "Designer Kurtas",
+          category: "designer",
+          price: 240.00,
+          rating: 5.0,
+          badge: "Maison Icon",
+          description: "A traditional overlapping Angrakha silhouette elevated with intricate Banarasi gold floral brocade. Fastened with handcrafted silk tassels.",
+          fabric: "Handloom Banarasi Katan Silk with hand-knotted silk dori ties.",
+          care: "Professional dry clean only. Low heat reverse steam.",
+          sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+          defaultColor: "Royal Peacock",
+          colors: [
+            { name: "Royal Peacock", hex: "#1F4E5B", garmentTone: "#1F4E5B" },
+            { name: "Ruby Wine", hex: "#631E2B", garmentTone: "#631E2B" },
+            { name: "Ochre Gold", hex: "#B8860B", garmentTone: "#B8860B" }
+          ]
+        },
+        {
+          id: "re-104",
+          name: "Slate Tussar Executive Kurta",
+          collection: "Office Wear",
+          category: "office",
+          price: 155.00,
+          rating: 4.7,
+          badge: "Atelier Signature",
+          description: "Clean, architectural straight cut kurta tailored in crisp Tussar silk with concealed side pockets and an inverted back pleat for effortless movement.",
+          fabric: "Structured wild Tussar Silk with matte textured finish.",
+          care: "Dry clean recommended or dry wash in cold water.",
+          sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+          defaultColor: "Slate Grey",
+          colors: [
+            { name: "Slate Grey", hex: "#686D76", garmentTone: "#686D76" },
+            { name: "Charcoal Ink", hex: "#2C2E33", garmentTone: "#2C2E33" },
+            { name: "Espresso", hex: "#3D312A", garmentTone: "#3D312A" }
+          ]
+        },
+        {
+          id: "re-105",
+          name: "Bagh Handblock Indigo Kurta",
+          collection: "Casual Kurtas",
+          category: "casual",
+          price: 110.00,
+          rating: 4.8,
+          badge: "Pure Cotton",
+          description: "Crafted using century-old vegetable-dyed wooden block stamps from Bagh artisans. Breathable, durable, and softens with every wear.",
+          fabric: "100% Certified Organic Handspun Cotton with natural indigo dye.",
+          care: "Hand wash separately in cold water. Natural dyes may bleed gently initially.",
+          sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+          defaultColor: "Indigo Blue",
+          colors: [
+            { name: "Indigo Blue", hex: "#264653", garmentTone: "#264653" },
+            { name: "Terracotta", hex: "#B85D43", garmentTone: "#B85D43" },
+            { name: "Olive Earth", hex: "#4A573E", garmentTone: "#4A573E" }
+          ]
+        },
+        {
+          id: "re-106",
+          name: "Chikankari Tissue Anarkali Kurta",
+          collection: "Designer Kurtas",
+          category: "designer",
+          price: 275.00,
+          rating: 4.9,
+          badge: "Limited Edition",
+          description: "Exquisite tone-on-tone Lucknowi Chikankari needlework across flowing shimmer tissue fabric. Includes 32 flare kalis for a grand regal drape.",
+          fabric: "Silk Tissue with hand-embroidered Bakhiya and Phanda stitches.",
+          care: "Dry clean only. Store in protective cotton bag.",
+          sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+          defaultColor: "Champagne Gold",
+          colors: [
+            { name: "Champagne Gold", hex: "#D4AF37", garmentTone: "#C5A030" },
+            { name: "Rose Quartz", hex: "#D8A49B", garmentTone: "#CB948B" },
+            { name: "Silver Mist", hex: "#A8B2B7", garmentTone: "#9AA4A9" }
+          ]
+        },
+        {
+          id: "re-107",
+          name: "Linen Minimalist Slit Kurta",
+          collection: "Office Wear",
+          category: "office",
+          price: 145.00,
+          rating: 4.7,
+          badge: "Summer Pure",
+          description: "European flax linen tailored with a modern mandarin collar and high side slits. Ideal for contemporary layering over wide-leg palazzos.",
+          fabric: "100% Pure Organic European Flax Linen.",
+          care: "Machine wash cold delicate. Iron damp on high heat.",
+          sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+          defaultColor: "Sand Dune",
+          colors: [
+            { name: "Sand Dune", hex: "#D6C7B2", garmentTone: "#C9BAA5" },
+            { name: "Optical White", hex: "#FDFDFD", garmentTone: "#F2F2F2" },
+            { name: "Olive Khaki", hex: "#73755A", garmentTone: "#66684F" }
+          ]
+        },
+        {
+          id: "re-108",
+          name: "Marigold Velvet Winter Kurta",
+          collection: "Festive Kurtas",
+          category: "festive",
+          price: 215.00,
+          rating: 4.9,
+          badge: "Winter Warmth",
+          description: "Plush micro-velvet kurta in luminous marigold amber, lined with soft silk satin and framed with intricate gota patti border work.",
+          fabric: "Premium Micro-Velvet with pure silk satin lining and gota patti.",
+          care: "Specialist dry clean only. Do not direct iron velvet pile.",
+          sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+          defaultColor: "Deep Amber",
+          colors: [
+            { name: "Deep Amber", hex: "#C68B2C", garmentTone: "#B87F24" },
+            { name: "Burgundy Velvet", hex: "#581825", garmentTone: "#4D141F" },
+            { name: "Forest Emerald", hex: "#1C3F32", garmentTone: "#163328" }
+          ]
+        }
+      ]
+    };
+
+    /* ==========================================================================
+       CLIENT-SIDE STATE STORE (LOCAL STORAGE PERSISTED)
+       ========================================================================== */
+    const State = {
+      theme: localStorage.getItem('re_theme') || 'light',
+      wishlist: JSON.parse(localStorage.getItem('re_wishlist') || '[]'),
+      bag: JSON.parse(localStorage.getItem('re_bag') || '[]'),
+      appliedPromo: localStorage.getItem('re_promo') || null,
+      selectedProductColor: {},
+      selectedProductSize: {},
+      currentFilmIdx: 0,
+      filmPlaying: true,
+
+      save() {
+        localStorage.setItem('re_theme', this.theme);
+        localStorage.setItem('re_wishlist', JSON.stringify(this.wishlist));
+        localStorage.setItem('re_bag', JSON.stringify(this.bag));
+        if (this.appliedPromo) {
+          localStorage.setItem('re_promo', this.appliedPromo);
+        } else {
+          localStorage.removeItem('re_promo');
+        }
+        this.updateCounters();
+      },
+
+      updateCounters() {
+        const wishEl = document.getElementById('wishlist-counter');
+        const bagEl = document.getElementById('bag-counter');
+        if (wishEl) wishEl.textContent = this.wishlist.length;
+        if (bagEl) {
+          const totalQty = this.bag.reduce((sum, item) => sum + item.qty, 0);
+          bagEl.textContent = totalQty;
+        }
+      }
+    };
+
+    /* Initialize Theme on DOM */
+    function applyTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      State.theme = theme;
+      State.save();
+      const themeIcon = document.getElementById('theme-icon');
+      if (themeIcon) {
+        if (theme === 'dark') {
+          themeIcon.innerHTML = '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>';
+        } else {
+          themeIcon.innerHTML = '<circle cx="12" cy="12" r="5"></circle><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>';
+        }
+      }
+    }
+
+    /* Toast Notification Helper */
+    function showToast(msg) {
+      const toast = document.getElementById('toast-notification');
+      if (!toast) return;
+      toast.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2600);
+    }
+
+    /* Modal Open / Close Helper */
+    function openModal(contentHtml) {
+      const modal = document.getElementById('luxury-modal');
+      const body = document.getElementById('luxury-modal-body');
+      if (!modal || !body) return;
+      body.innerHTML = `
+        <button class="modal-close-cross" onclick="closeModal()" aria-label="Close Dialog">&times;</button>
+        ${contentHtml}
+      `;
+      modal.classList.add('open');
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('luxury-modal');
+      if (modal) modal.classList.remove('open');
+    }
+
+    /* Close modal on background click or Esc key */
+    document.getElementById('luxury-modal').addEventListener('click', (e) => {
+      if (e.target.id === 'luxury-modal') closeModal();
+    });
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
+
+    /* ==========================================================================
+       HIGH-AESTHETIC VECTOR SILHOUETTE & GARMENT SVG GENERATOR
+       (Renders exquisite garment illustrations with dynamic coloring & zari borders)
+       ========================================================================== */
+    function renderGarmentSVG(colorHex, patternType = 'zari') {
+      const safeColor = colorHex || '#8B263E';
+      return `
+        <svg viewBox="0 0 320 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Raadhya Ethnica Handcrafted Kurta Silhouette">
+          <defs>
+            <linearGradient id="fabricShading-${safeColor.replace('#','')}" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="${safeColor}" stop-opacity="0.9" />
+              <stop offset="50%" stop-color="${safeColor}" stop-opacity="1" />
+              <stop offset="100%" stop-color="#0a0a0a" stop-opacity="0.25" />
+            </linearGradient>
+            <linearGradient id="goldZariBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#9C805A" />
+              <stop offset="50%" stop-color="#D4AF37" />
+              <stop offset="100%" stop-color="#7D6545" />
+            </linearGradient>
+            <pattern id="zariMotif" width="20" height="20" patternUnits="userSpaceOnUse">
+              <path d="M10 2 L18 10 L10 18 L2 10 Z" fill="none" stroke="#D4AF37" stroke-width="0.5" stroke-opacity="0.35"/>
+              <circle cx="10" cy="10" r="1.5" fill="#D4AF37" fill-opacity="0.4"/>
+            </pattern>
+          </defs>
+
+          <!-- Subtle Background Aura -->
+          <circle cx="160" cy="220" r="130" fill="var(--border-subtle)" opacity="0.6"/>
+
+          <!-- Kurta Body Silhouette -->
+          <g transform="translate(10, 15)">
+            <!-- Main Flared Kurta Body -->
+            <path d="M110 50 
+                     C125 58, 175 58, 190 50
+                     L235 90 L215 125 L190 115
+                     L205 350 L95 350 L110 115
+                     L85 125 L65 90 Z" 
+                  fill="url(#fabricShading-${safeColor.replace('#','')})" 
+                  stroke="rgba(0,0,0,0.15)" stroke-width="1.2"/>
+
+            <!-- Elegant Pattern Jaal Overlay -->
+            <path d="M110 50 
+                     C125 58, 175 58, 190 50
+                     L235 90 L215 125 L190 115
+                     L205 350 L95 350 L110 115
+                     L85 125 L65 90 Z" 
+                  fill="url(#zariMotif)" opacity="0.6"/>
+
+            <!-- Neckline & Embroidered Yoke Placket -->
+            <path d="M130 54 Q150 78 170 54 L155 140 L145 140 Z" 
+                  fill="url(#goldZariBorder)" opacity="0.95"/>
+            <circle cx="150" cy="85" r="2.2" fill="#ffffff"/>
+            <circle cx="150" cy="105" r="2.2" fill="#ffffff"/>
+            <circle cx="150" cy="125" r="2.2" fill="#ffffff"/>
+
+            <!-- Center Pleat Fold Line -->
+            <line x1="150" y1="140" x2="150" y2="348" stroke="#000000" stroke-width="1.5" stroke-opacity="0.25"/>
+
+            <!-- Side Slit Accents -->
+            <line x1="112" y1="210" x2="98" y2="350" stroke="#000000" stroke-width="1.2" stroke-opacity="0.2"/>
+            <line x1="188" y1="210" x2="202" y2="350" stroke="#000000" stroke-width="1.2" stroke-opacity="0.2"/>
+
+            <!-- Hemline Zari Damani Border -->
+            <rect x="95" y="342" width="110" height="8" fill="url(#goldZariBorder)"/>
+            
+            <!-- Sleeve Cuff Gold Borders -->
+            <polygon points="65,90 85,125 78,128 58,93" fill="url(#goldZariBorder)"/>
+            <polygon points="235,90 215,125 222,128 242,93" fill="url(#goldZariBorder)"/>
+
+            <!-- Minimalist Atelier Hanger Curve -->
+            <path d="M150 25 C150 18, 155 12, 160 18 C165 24, 150 32, 150 35 L150 50" 
+                  fill="none" stroke="#9C805A" stroke-width="2.5" stroke-linecap="round"/>
+          </g>
+        </svg>
+      `;
+    }
+
+    /* ==========================================================================
+       ROUTING SYSTEM (HASH-BASED SINGLE PAGE APP)
+       Supported: #home, #shop, #product, #maison, #contact, #care, #bag, #wishlist, #account
+       ========================================================================== */
+    function navigateToHash() {
+      const hash = window.location.hash || '#home';
+      const root = document.getElementById('app-view-root');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      // Parse routes like #product?id=re-101 or #shop?category=cotton
+      const [path, queryStr] = hash.split('?');
+      const params = new URLSearchParams(queryStr || '');
+
+      // Update active nav links
+      document.querySelectorAll('.header-desktop-nav a').forEach(a => {
+        const href = a.getAttribute('href');
+        if (href === hash || (path === '#shop' && href.startsWith('#shop'))) {
+          a.classList.add('active');
+        } else {
+          a.classList.remove('active');
+        }
+      });
+
+      switch (path) {
+        case '#home':
+          root.innerHTML = renderHomeView();
+          break;
+        case '#shop':
+          root.innerHTML = renderShopView(params.get('category') || 'all', params.get('sort') || 'featured');
+          break;
+        case '#product':
+          const prodId = params.get('id') || 're-101';
+          root.innerHTML = renderProductView(prodId);
+          break;
+        case '#maison':
+          root.innerHTML = renderMaisonView();
+          break;
+        case '#contact':
+          root.innerHTML = renderContactView();
+          break;
+        case '#care':
+          root.innerHTML = renderCareView(params.get('tab') || 'shipping');
+          break;
+        case '#bag':
+          root.innerHTML = renderBagView();
+          break;
+        case '#wishlist':
+          root.innerHTML = renderWishlistView();
+          break;
+        case '#account':
+          root.innerHTML = renderAccountView();
+          break;
+        default:
+          root.innerHTML = renderHomeView();
+      }
+
+      // Re-bind view interactive listeners
+      bindViewListeners();
+    }
+
+    /* ==========================================================================
+       VIEW RENDERER 1: HOME (#home)
+       Order strictly adheres to Louis Vuitton structure:
+       1. Full-width hero ("New Collection" / "The Festive Edit" + 2 stacked links)
+       2. "Explore a selection of the maison's creations" (6 category tiles)
+       3. Horizontal product rails: New Arrivals & Everyday Cotton
+       4. "Seen on Instagram" vertical reel-style tiles
+       5. "The Maison Raadhya Ethnica" (3 editorial tiles)
+       6. Stats & services strip
+       7. Private list newsletter (10% first order)
+       ========================================================================== */
+    function renderHomeView() {
+      // Products for rails
+      const newArrivals = SITE_CONFIG.products.slice(0, 4);
+      const everydayCotton = SITE_CONFIG.products.filter(p => p.category === 'cotton' || p.category === 'casual').slice(0, 4);
+
+      return `
+        <!-- 1. FULL-WIDTH HERO (LV EDITORIAL STYLE) -->
+        <section class="hero-section" aria-label="Maison Hero">
+          <div class="hero-backdrop"></div>
+          <div class="hero-pattern-bg"></div>
+          
+          <div class="hero-silhouette-art">
+            ${renderGarmentSVG('#8B263E')}
+          </div>
+
+          <div class="container" style="position: relative; z-index: 5;">
+            <div class="hero-content">
+              <span class="eyebrow">New Collection &middot; Kathmandu Atelier</span>
+              <h1 class="hero-title">The Festive Edit</h1>
+              <p class="hero-subtitle">
+                Authentic Indian ethnic wear crafted with passion and elegance. Discover pure raw silk, handloom Chanderi, and antique zardozi embroideries designed to celebrate every woman, every occasion.
+              </p>
+              <div class="hero-stacked-links">
+                <a href="#shop?category=festive" class="btn btn-solid">Discover The Collection</a>
+                <a href="#shop?category=all" class="btn btn-link">Explore All Kurtas &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2. EXPLORE A SELECTION OF THE MAISON'S CREATIONS (6 TILES) -->
+        <section class="selection-section">
+          <div class="container">
+            <div class="section-header-centered">
+              <span class="eyebrow">Maison Categories</span>
+              <h2 class="section-title">Explore a Selection of the Maison's Creations</h2>
+              <p class="section-desc">Six distinctive sartorial expressions, curated from everyday pure breathable cotton to celebratory heirloom zardozi.</p>
+            </div>
+
+            <div class="category-tiles-grid">
+              ${SITE_CONFIG.categories.map((cat, idx) => {
+                const sampleColor = idx % 2 === 0 ? '#8B263E' : (idx % 3 === 0 ? '#1D4E3E' : '#B8860B');
+                return `
+                  <article class="category-tile">
+                    <div class="category-tile-media">
+                      ${renderGarmentSVG(sampleColor)}
+                    </div>
+                    <div class="category-tile-info">
+                      <h3 class="category-tile-name">${cat.name}</h3>
+                      <span class="category-tile-count">${cat.subtitle} &middot; ${cat.count}</span>
+                      <a href="#shop?category=${cat.id}" class="btn-link">Discover Creations &rarr;</a>
+                    </div>
+                  </article>
+                `;
+              }).join('')}
+            </div>
+          </div>
+        </section>
+
+        <!-- 3. HORIZONTAL PRODUCT RAIL: NEW ARRIVALS -->
+        <section class="product-rail-section">
+          <div class="container">
+            <div class="rail-header">
+              <div>
+                <span class="eyebrow">Atelier Premiere</span>
+                <h2 class="section-title">New Arrivals</h2>
+              </div>
+              <a href="#shop?category=all" class="btn btn-outline">View All Creations</a>
+            </div>
+
+            <div class="product-rail-container">
+              ${newArrivals.map(p => renderProductCardHTML(p)).join('')}
+            </div>
+          </div>
+        </section>
+
+        <!-- 3B. HORIZONTAL PRODUCT RAIL: EVERYDAY COTTON -->
+        <section class="product-rail-section" style="background-color: var(--bg-surface);">
+          <div class="container">
+            <div class="rail-header">
+              <div>
+                <span class="eyebrow">Pure & Breathable</span>
+                <h2 class="section-title">Everyday Cotton Curations</h2>
+              </div>
+              <a href="#shop?category=cotton" class="btn btn-outline">Explore Cotton Series</a>
+            </div>
+
+            <div class="product-rail-container">
+              ${everydayCotton.map(p => renderProductCardHTML(p)).join('')}
+            </div>
+          </div>
+        </section>
+
+        <!-- 4. SEEN ON INSTAGRAM (@raadhya_ethnica REEL TILES) -->
+        <section class="instagram-section">
+          <div class="container">
+            <div class="instagram-header">
+              <span class="eyebrow">Visual Chronicle &middot; Kathmandu</span>
+              <h2 class="section-title">Seen on Instagram</h2>
+              <a href="${SITE_CONFIG.brand.instagramUrl}" target="_blank" rel="noopener" class="instagram-handle-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+                ${SITE_CONFIG.brand.instagramHandle}
+              </a>
+              <p class="section-desc">
+                Real promotional footage and styling sessions by the founder featuring models wearing our newest kurta designs. Click any tile to open the authentic post on Instagram.
+              </p>
+            </div>
+
+            <div class="instagram-reels-grid">
+              ${SITE_CONFIG.instagramPosts.map((post, idx) => `
+                <a href="${post.postUrl}" target="_blank" rel="noopener" class="instagram-card" aria-label="Open Instagram Reel: ${post.caption}">
+                  <div class="instagram-media-wrapper">
+                    ${renderGarmentSVG(idx === 0 ? '#8B263E' : (idx === 1 ? '#D6C7B2' : (idx === 2 ? '#1F4E5B' : '#686D76')))}
+                    <div class="instagram-overlay">
+                      <div class="instagram-pill">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                          <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                        </svg>
+                        <span>Reel Story</span>
+                      </div>
+                      <div>
+                        <p class="instagram-card-caption">${post.caption}</p>
+                        <span class="instagram-card-action">Watch on Instagram &rarr;</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              `).join('')}
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+              <a href="${SITE_CONFIG.brand.instagramUrl}" target="_blank" rel="noopener" class="btn btn-outline">
+                Follow @raadhya_ethnica on Instagram
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- 5. THE MAISON RAADHYA ETHNICA (3 EDITORIAL TILES) -->
+        <section class="maison-section">
+          <div class="container">
+            <div class="section-header-centered">
+              <span class="eyebrow">The Maison Heritage</span>
+              <h2 class="section-title">The Maison Raadhya Ethnica</h2>
+              <p class="section-desc">Born from a reverence for subcontinent textiles, bridging timeless Indian artisanal savoir-faire with contemporary silhouettes.</p>
+            </div>
+
+            <div class="maison-grid">
+              <div class="maison-tile">
+                <div>
+                  <span class="maison-tile-number">01</span>
+                  <h3 class="maison-tile-title">Our Heritage</h3>
+                  <p class="maison-tile-body">
+                    Founded in Kathmandu with an unyielding passion for ethnic fashion, Raadhya Ethnica honors centuries of Indian handloom heritage. Every kurta is envisioned so that every woman feels unshakeably confident, graceful, and connected to artisanal roots.
+                  </p>
+                </div>
+                <a href="#maison" class="btn-link">Read The Maison Story &rarr;</a>
+              </div>
+
+              <div class="maison-tile">
+                <div>
+                  <span class="maison-tile-number">02</span>
+                  <h3 class="maison-tile-title">The Collections</h3>
+                  <p class="maison-tile-body">
+                    From crisp lightweight mulmul for everyday ease to richly embellished zardozi silks for celebratory occasions, each collection reflects our three guiding pillars: Quality First, Customer Satisfaction, and Sustainable Craft.
+                  </p>
+                </div>
+                <a href="#shop?category=all" class="btn-link">Browse Full Archive &rarr;</a>
+              </div>
+
+              <div class="maison-tile">
+                <div>
+                  <span class="maison-tile-number">03</span>
+                  <h3 class="maison-tile-title">Client Concierge</h3>
+                  <p class="maison-tile-body">
+                    Experience personalized styling and bespoke fitting guidance directly from our Kathmandu atelier. Our client advisors respond promptly within 24 hours on WhatsApp and email.
+                  </p>
+                </div>
+                <a href="#contact" class="btn-link">Connect With Advisor &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 6. STATS & SERVICES STRIP -->
+        <section class="stats-section">
+          <div class="container">
+            <div class="stats-grid">
+              ${SITE_CONFIG.stats.map(s => `
+                <div class="stat-item">
+                  <span class="stat-value">${s.value}</span>
+                  <span class="stat-label">${s.label}</span>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        </section>
+
+        <section class="services-strip">
+          <div class="container">
+            <div class="services-grid">
+              ${SITE_CONFIG.trustPoints.map((tp, idx) => `
+                <div class="service-card">
+                  <div class="service-card-icon">
+                    ${idx === 0 ? `
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                      </svg>
+                    ` : idx === 1 ? `
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect x="1" y="3" width="15" height="13"></rect>
+                        <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                        <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                        <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                      </svg>
+                    ` : idx === 2 ? `
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <polyline points="1 4 1 10 7 10"></polyline>
+                        <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+                      </svg>
+                    ` : `
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                      </svg>
+                    `}
+                  </div>
+                  <h3 class="service-card-title">${tp.title}</h3>
+                  <p class="service-card-desc">${tp.desc}</p>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        </section>
+
+        <!-- 7. PRIVATE LIST NEWSLETTER (10% FIRST ORDER) -->
+        <section class="newsletter-section">
+          <div class="container">
+            <div class="newsletter-container">
+              <span class="eyebrow">Privileged Access &middot; By Invitation</span>
+              <h2 class="section-title">Join The Maison List</h2>
+              <p class="section-desc">
+                Receive confidential previews of forthcoming collections, private atelier invitations, and enjoy <strong>10% off your premier order</strong> with code <strong>WELCOME10</strong>.
+              </p>
+
+              <form class="newsletter-form" onsubmit="event.preventDefault(); showToast('Invitation confirmed. Welcome code WELCOME10 registered.');">
+                <input type="email" class="luxury-input" placeholder="Enter your email address" required aria-label="Email for Maison Newsletter">
+                <button type="submit" class="btn btn-solid">Accept Invitation</button>
+              </form>
+
+              <p class="newsletter-disclaimer">
+                Preview-only registration. By subscribing, you agree to receive editorial releases from Raadhya Ethnica. You may unsubscribe at any time.
+              </p>
+            </div>
+          </div>
+        </section>
+      `;
+    }
+
+    /* Helper: Product Card HTML */
+    function renderProductCardHTML(product) {
+      const isWishlisted = State.wishlist.includes(product.id);
+      const activeColor = State.selectedProductColor[product.id] || product.colors[0];
+
+      return `
+        <article class="product-card" id="card-${product.id}">
+          <span class="product-badge-flag">${product.badge}</span>
+          
+          <button class="product-wishlist-toggle ${isWishlisted ? 'active' : ''}" 
+                  onclick="toggleWishlist('${product.id}')" 
+                  aria-label="Save ${product.name} to Wishlist">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="${isWishlisted ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="1.6">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+          </button>
+
+          <div class="product-card-media" onclick="location.hash='#product?id=${product.id}'">
+            <div id="media-svg-${product.id}">
+              ${renderGarmentSVG(activeColor.garmentTone)}
+            </div>
+            <div class="product-quick-action">View Creation Details</div>
+          </div>
+
+          <div class="product-card-details">
+            <span class="product-card-collection">${product.collection}</span>
+            <h3 class="product-card-name">
+              <a href="#product?id=${product.id}">${product.name}</a>
+            </h3>
+
+            <div class="product-swatches-mini">
+              ${product.colors.map(c => `
+                <span class="swatch-mini" style="background-color: ${c.hex};" title="${c.name}"></span>
+              `).join('')}
+            </div>
+
+            <div class="product-card-price">
+              <span>A$ ${product.price.toFixed(2)}</span>
+              <span style="font-size: 0.72rem; color: var(--text-muted); font-weight: 400;">Kathmandu Atelier</span>
+            </div>
+          </div>
+        </article>
+      `;
+    }
+
+    /* ==========================================================================
+       VIEW RENDERER 2: SHOP CATALOGUE (#shop)
+       ========================================================================== */
+    function renderShopView(activeCategory = 'all', sortMode = 'featured') {
+      let filtered = SITE_CONFIG.products;
+
+      if (activeCategory !== 'all') {
+        filtered = filtered.filter(p => p.category === activeCategory);
+      }
+
+      if (sortMode === 'price-low') {
+        filtered = [...filtered].sort((a, b) => a.price - b.price);
+      } else if (sortMode === 'price-high') {
+        filtered = [...filtered].sort((a, b) => b.price - a.price);
+      } else if (sortMode === 'rating') {
+        filtered = [...filtered].sort((a, b) => b.rating - a.rating);
+      }
+
+      const activeCatObj = SITE_CONFIG.categories.find(c => c.id === activeCategory) || SITE_CONFIG.categories[0];
+
+      return `
+        <div class="shop-view-header">
+          <div class="container">
+            <span class="eyebrow">Atelier Wardrobe</span>
+            <h1 class="section-title">${activeCatObj.name}</h1>
+            <p class="section-desc">${activeCatObj.subtitle} &middot; Certified 100% authentic Indian ethnic textiles.</p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="shop-controls-bar">
+            <!-- Category Chips -->
+            <div class="filter-chips-list">
+              ${SITE_CONFIG.categories.map(cat => `
+                <button class="filter-chip ${activeCategory === cat.id ? 'active' : ''}" 
+                        onclick="location.hash='#shop?category=${cat.id}&sort=${sortMode}'">
+                  ${cat.name}
+                </button>
+              `).join('')}
+            </div>
+
+            <!-- Sort Selector -->
+            <div class="sort-select-wrapper">
+              <label for="sort-select" style="font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; margin-right: 0.5rem; color: var(--text-muted);">Sort By:</label>
+              <select id="sort-select" onchange="location.hash='#shop?category=${activeCategory}&sort=' + this.value">
+                <option value="featured" ${sortMode === 'featured' ? 'selected' : ''}>Featured Curation</option>
+                <option value="price-low" ${sortMode === 'price-low' ? 'selected' : ''}>Price: Low to High</option>
+                <option value="price-high" ${sortMode === 'price-high' ? 'selected' : ''}>Price: High to Low</option>
+                <option value="rating" ${sortMode === 'rating' ? 'selected' : ''}>Client Rating</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Product Grid -->
+          <div class="shop-grid-container">
+            ${filtered.length > 0 ? filtered.map(p => renderProductCardHTML(p)).join('') : `
+              <div style="grid-column: 1 / -1; text-align: center; padding: 5rem 0;">
+                <p style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 1.5rem;">No creations found matching this selection.</p>
+                <a href="#shop?category=all" class="btn btn-solid">View All Products</a>
+              </div>
+            `}
+          </div>
+        </div>
+      `;
+    }
+
+    /* ==========================================================================
+       VIEW RENDERER 3: PRODUCT DETAIL PAGE (PDP #product?id=...)
+       Includes live garment color swatches that recolor the SVG dynamically!
+       ========================================================================== */
+    function renderProductView(productId) {
+      const product = SITE_CONFIG.products.find(p => p.id === productId) || SITE_CONFIG.products[0];
+      const selectedColor = State.selectedProductColor[product.id] || product.colors[0];
+      const selectedSize = State.selectedProductSize[product.id] || product.sizes[1]; // Default 'S'
+      const isWishlisted = State.wishlist.includes(product.id);
+
+      // WhatsApp advisor link with pre-populated message
+      const advisorWaLink = `https://wa.me/9779869100969?text=${encodeURIComponent(`Hi! I'm interested in your kurtas collection, specifically the "${product.name}" in ${selectedColor.name} (Size: ${selectedSize}). Could you share further atelier photos and fit advice?`)}`;
+
+      return `
+        <div class="pdp-section">
+          <div class="container">
+            
+            <!-- Breadcrumbs -->
+            <nav class="pdp-breadcrumbs" aria-label="Breadcrumb">
+              <a href="#home">Home</a> &gt;
+              <a href="#shop?category=all">Collections</a> &gt;
+              <a href="#shop?category=${product.category}">${product.collection}</a> &gt;
+              <span style="color: var(--text-primary); font-weight: 500;">${product.name}</span>
+            </nav>
+
+            <div class="pdp-layout">
+              
+              <!-- Left Gallery View with Live Color Reaction -->
+              <div class="pdp-gallery-wrap">
+                <div class="pdp-main-image-box" id="pdp-main-box">
+                  <span class="product-badge-flag" style="top: 1.5rem; left: 1.5rem;">${product.badge}</span>
+                  <div id="pdp-svg-container" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                    ${renderGarmentSVG(selectedColor.garmentTone)}
+                  </div>
+                </div>
+
+                <div class="pdp-thumbnails-strip">
+                  ${product.colors.map((c, i) => `
+                    <button class="pdp-thumb-btn ${selectedColor.name === c.name ? 'active' : ''}" 
+                            onclick="selectPdpColor('${product.id}', '${c.name}')" 
+                            aria-label="View in ${c.name}">
+                      <div style="width: 22px; height: 22px; border-radius: 50%; background-color: ${c.hex}; border: 1px solid var(--border-color); margin-bottom: 4px;"></div>
+                      <span style="font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.1em; display: block;">${c.name}</span>
+                    </button>
+                  `).join('')}
+                </div>
+              </div>
+
+              <!-- Right Purchase & Savoir-Faire Information -->
+              <div class="pdp-details-wrap">
+                <span class="eyebrow">${product.collection} &middot; Atelier Certified</span>
+                <h1 class="pdp-title">${product.name}</h1>
+                <div class="pdp-price">A$ ${product.price.toFixed(2)}</div>
+                
+                <p class="pdp-description-lead">${product.description}</p>
+
+                <!-- Color Swatches -->
+                <div class="pdp-option-group">
+                  <div class="pdp-option-header">
+                    <span>Selected Shade: <strong id="pdp-color-label" style="color: var(--bronze);">${selectedColor.name}</strong></span>
+                    <span style="font-size: 0.68rem; color: var(--text-muted);">${product.colors.length} Atelier Hues</span>
+                  </div>
+                  <div class="swatches-selector">
+                    ${product.colors.map(c => `
+                      <button class="swatch-btn ${selectedColor.name === c.name ? 'active' : ''}" 
+                              style="background-color: ${c.hex};" 
+                              onclick="selectPdpColor('${product.id}', '${c.name}')" 
+                              title="${c.name}" 
+                              aria-label="Select Color ${c.name}">
+                      </button>
+                    `).join('')}
+                  </div>
+                </div>
+
+                <!-- Size Selector with Modal Guide -->
+                <div class="pdp-option-group">
+                  <div class="pdp-option-header">
+                    <span>Selected Size: <strong id="pdp-size-label" style="color: var(--bronze);">${selectedSize}</strong></span>
+                    <button class="btn-link" onclick="openSizeGuideModal()" style="font-size: 0.68rem;">Size Guide &amp; Fit &rarr;</button>
+                  </div>
+                  <div class="size-selector-grid">
+                    ${product.sizes.map(s => `
+                      <button class="size-btn ${selectedSize === s ? 'active' : ''}" 
+                              onclick="selectPdpSize('${product.id}', '${s}')">
+                        ${s}
+                      </button>
+                    `).join('')}
+                  </div>
+                </div>
+
+                <!-- Kathmandu Atelier Stock Note -->
+                <div class="atelier-inventory-note">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>In Stock &middot; Handcrafted at Kathmandu Atelier &middot; Express Dispatch</span>
+                </div>
+
+                <!-- Primary CTAs -->
+                <div class="pdp-actions-row">
+                  <button class="btn btn-solid" onclick="addToBagFromPdp('${product.id}')">
+                    Add To Shopping Bag
+                  </button>
+                  <button class="btn btn-outline" onclick="toggleWishlist('${product.id}')">
+                    ${isWishlisted ? 'Saved in Wishlist' : 'Save to Wishlist'}
+                  </button>
+                </div>
+
+                <!-- WhatsApp Advisor Link -->
+                <div style="margin-bottom: 2rem;">
+                  <a href="${advisorWaLink}" target="_blank" rel="noopener" class="btn btn-bronze" style="width: 100%;">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 6px;">
+                      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                    </svg>
+                    Ask a Client Advisor (WhatsApp)
+                  </a>
+                </div>
+
+                <!-- Editorial Details Accordions -->
+                <div class="pdp-accordion-group">
+                  <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                      <span>Fabric &amp; Craftsmanship</span>
+                      <span>+</span>
+                    </button>
+                    <div class="accordion-body">
+                      <p><strong>Fabrication:</strong> ${product.fabric}</p>
+                      <p style="margin-top: 0.5rem;">Handpicked weaves sourced from historical weaving clusters and tailored with meticulous precision in our Kathmandu boutique workshop.</p>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                      <span>Complimentary Delivery &amp; 7-Day Returns</span>
+                      <span>+</span>
+                    </button>
+                    <div class="accordion-body">
+                      <p>Complimentary worldwide express courier delivery on orders above A$150. Orders packaged in our archival signature dust boxes.</p>
+                      <p style="margin-top: 0.5rem;">Complimentary returns and size exchanges accepted within 7 calendar days from delivery date.</p>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                      <span>Care Instructions</span>
+                      <span>+</span>
+                    </button>
+                    <div class="accordion-body">
+                      <p>${product.care}</p>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                      <span>Sustainability &amp; Ethical Values</span>
+                      <span>+</span>
+                    </button>
+                    <div class="accordion-body">
+                      <p>Crafted in small, conscious batches to eliminate excess inventory. We uphold fair compensation and safe working environments for all our master tailors and artisans.</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- Related Creations Rail -->
+            <div style="margin-top: 6rem; padding-top: 4rem; border-top: 1px solid var(--border-color);">
+              <div class="rail-header">
+                <div>
+                  <span class="eyebrow">Harmonious Pairings</span>
+                  <h2 class="section-title">You May Also Admire</h2>
+                </div>
+                <a href="#shop?category=${product.category}" class="btn btn-outline">Explore Category</a>
+              </div>
+              <div class="product-rail-container">
+                ${SITE_CONFIG.products.filter(p => p.id !== product.id).slice(0, 4).map(p => renderProductCardHTML(p)).join('')}
+              </div>
+            </div>
+
+          </div>
+        </div>
+      `;
+    }
+
+    /* PDP Color and Size Selectors */
+    function selectPdpColor(productId, colorName) {
+      const product = SITE_CONFIG.products.find(p => p.id === productId);
+      if (!product) return;
+      const colorObj = product.colors.find(c => c.name === colorName);
+      if (!colorObj) return;
+
+      State.selectedProductColor[productId] = colorObj;
+      const svgContainer = document.getElementById('pdp-svg-container');
+      const label = document.getElementById('pdp-color-label');
+      if (svgContainer) svgContainer.innerHTML = renderGarmentSVG(colorObj.garmentTone);
+      if (label) label.textContent = colorObj.name;
+
+      // Update swatch active classes
+      document.querySelectorAll('.swatch-btn').forEach(btn => {
+        if (btn.getAttribute('title') === colorName) btn.classList.add('active');
+        else btn.classList.remove('active');
+      });
+      document.querySelectorAll('.pdp-thumb-btn').forEach(btn => {
+        if (btn.textContent.includes(colorName)) btn.classList.add('active');
+        else btn.classList.remove('active');
+      });
+    }
+
+    function selectPdpSize(productId, sizeStr) {
+      State.selectedProductSize[productId] = sizeStr;
+      const label = document.getElementById('pdp-size-label');
+      if (label) label.textContent = sizeStr;
+
+      document.querySelectorAll('.size-btn').forEach(btn => {
+        if (btn.textContent.trim() === sizeStr) btn.classList.add('active');
+        else btn.classList.remove('active');
+      });
+    }
+
+    function toggleAccordion(btn) {
+      const body = btn.nextElementSibling;
+      const span = btn.querySelector('span:last-child');
+      if (body.classList.contains('open')) {
+        body.classList.remove('open');
+        span.textContent = '+';
+      } else {
+        body.classList.add('open');
+        span.textContent = '–';
+      }
+    }
+
+    function openSizeGuideModal() {
+      openModal(`
+        <span class="eyebrow">Atelier Sizing Guide</span>
+        <h3 style="font-family: var(--font-display); font-size: 1.8rem; margin-bottom: 0.5rem;">Kurta Measurement Chart</h3>
+        <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6;">
+          All measurements are in inches. If you prefer a relaxed traditional fit or fall between two sizes, our Kathmandu atelier recommends choosing the larger size.
+        </p>
+
+        <table class="size-table">
+          <thead>
+            <tr>
+              <th>Size</th>
+              <th>Bust</th>
+              <th>Waist</th>
+              <th>Hip</th>
+              <th>Length</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>XS</strong></td><td>34"</td><td>30"</td><td>38"</td><td>44"</td></tr>
+            <tr><td><strong>S</strong></td><td>36"</td><td>32"</td><td>40"</td><td>45"</td></tr>
+            <tr><td><strong>M</strong></td><td>38"</td><td>34"</td><td>42"</td><td>45"</td></tr>
+            <tr><td><strong>L</strong></td><td>40"</td><td>36"</td><td>44"</td><td>46"</td></tr>
+            <tr><td><strong>XL</strong></td><td>42"</td><td>38"</td><td>46"</td><td>46"</td></tr>
+            <tr><td><strong>XXL</strong></td><td>44"</td><td>40"</td><td>48"</td><td>46"</td></tr>
+          </tbody>
+        </table>
+
+        <div style="background-color: var(--bg-surface); padding: 1.25rem; border: 1px solid var(--border-color); margin-top: 1.5rem;">
+          <h4 style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.14em; margin-bottom: 0.4rem;">Need Custom Tailoring?</h4>
+          <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 1rem;">
+            We offer bespoke sleeve lengths, neckline adjustments, and customized side slits upon WhatsApp request.
+          </p>
+          <a href="${SITE_CONFIG.brand.whatsappLink}" target="_blank" rel="noopener" class="btn btn-solid" style="width: 100%;">
+            WhatsApp Sizing Specialist
+          </a>
+        </div>
+      `);
+    }
+
+    /* ==========================================================================
+       VIEW RENDERER 4: THE MAISON / ABOUT US (#maison)
+       ========================================================================== */
+    function renderMaisonView() {
+      return `
+        <div class="editorial-hero container">
+          <span class="eyebrow">The Savoir-Faire &middot; Kathmandu Atelier</span>
+          <h1 class="section-title">Celebrating Every Woman, Every Occasion</h1>
+          <p class="section-desc">
+            Founded with an authentic passion for ethnic fashion, Raadhya Ethnica celebrates the sacred cultural heritage of Indian textiles through the lens of modern design.
+          </p>
+        </div>
+
+        <div class="editorial-content-block">
+          <div class="container">
+            
+            <div class="story-grid">
+              <div>
+                <span class="eyebrow">Our Origins</span>
+                <h2 style="font-family: var(--font-display); font-size: 2rem; margin-bottom: 1.25rem;">Handcrafted With Passion and Elegance</h2>
+                <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.75; font-weight: 300; margin-bottom: 1.25rem;">
+                  At Raadhya Ethnica, we hold a simple conviction: every woman should feel radiant, confident, and unapologetically comfortable in ethnic wear. From lightweight handloom mulmul to regal banarasi silks, every piece is curated to transition seamlessly from quiet everyday routines to joyous celebrations.
+                </p>
+                <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.75; font-weight: 300;">
+                  Operating our design house from Kathmandu, Nepal, we partner directly with revered master weavers and zardozi artisans across India. This cross-cultural dialogue honors traditional embroidery techniques while adapting cuts for the contemporary wardrobe.
+                </p>
+              </div>
+              <div style="background-color: var(--bg-surface); padding: 3rem; border: 1px solid var(--border-color); display: flex; align-items: center; justify-content: center;">
+                ${renderGarmentSVG('#8B263E')}
+              </div>
+            </div>
+
+            <!-- Maison Guiding Values -->
+            <div style="margin-top: 5rem; text-align: center; margin-bottom: 3.5rem;">
+              <span class="eyebrow">Our Three Commitments</span>
+              <h2 class="section-title">The Maison Values</h2>
+            </div>
+
+            <div class="values-cards-row">
+              <div class="value-card">
+                <span class="eyebrow">Pillar One</span>
+                <h3 style="font-family: var(--font-display); font-size: 1.4rem; margin-bottom: 0.75rem;">Quality First</h3>
+                <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.65; font-weight: 300;">
+                  We insist on the finest natural fibers: organic mulmul, high-count Chanderi, pure Tussar, and genuine mulberry silk. Every seam, pintuck, and hem is inspected to ensure heirloom longevity.
+                </p>
+              </div>
+
+              <div class="value-card">
+                <span class="eyebrow">Pillar Two</span>
+                <h3 style="font-family: var(--font-display); font-size: 1.4rem; margin-bottom: 0.75rem;">Customer Satisfaction</h3>
+                <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.65; font-weight: 300;">
+                  With over 10,000 satisfied clients and an average 4.8 rating, we treat every order as a personal relationship. Our dedicated client advisors remain at your service before and long after delivery.
+                </p>
+              </div>
+
+              <div class="value-card">
+                <span class="eyebrow">Pillar Three</span>
+                <h3 style="font-family: var(--font-display); font-size: 1.4rem; margin-bottom: 0.75rem;">Sustainability</h3>
+                <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.65; font-weight: 300;">
+                  We counter disposable fast fashion through limited batch production, biodegradable natural textiles, and ethical artisan compensation honoring traditional craft livelihoods.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      `;
+    }
+
+    /* ==========================================================================
+       VIEW RENDERER 5: CONTACT & ATELIER CONSULTATION (#contact)
+       Includes required fields: name*, email*, phone, subject*, message*
+       Confirmation note regarding owner's conflicting phone/Mumbai address.
+       ========================================================================== */
+    function renderContactView() {
+      return `
+        <div class="container">
+          <div class="contact-layout">
+            
+            <!-- Left: Atelier Information -->
+            <div>
+              <span class="eyebrow">Kathmandu Atelier</span>
+              <h1 class="section-title">Client Advisory &amp; Inquiries</h1>
+              <p class="section-desc" style="margin: 1rem 0 2rem;">
+                Whether you seek bespoke size consultations, international shipment inquiries, or bridal party curations, our client advisors are at your service.
+              </p>
+
+              <div style="display: flex; flex-direction: column; gap: 1.5rem; border-top: 1px solid var(--border-color); padding-top: 1.5rem;">
+                <div>
+                  <h4 style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.16em; color: var(--bronze); margin-bottom: 0.35rem;">Boutique Atelier Location</h4>
+                  <p style="font-size: 0.95rem; color: var(--text-primary);">Kathmandu, Nepal</p>
+                  <span class="owner-confirm-pill">Owner Verification Note: Contact details confirmed for Kathmandu atelier.</span>
+                </div>
+
+                <div>
+                  <h4 style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.16em; color: var(--bronze); margin-bottom: 0.35rem;">WhatsApp Instant Concierge</h4>
+                  <a href="${SITE_CONFIG.brand.whatsappLink}" target="_blank" rel="noopener" style="font-size: 1rem; color: var(--text-primary); font-weight: 500;">
+                    +977 9869100969 (wa.me/9779869100969)
+                  </a>
+                  <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2px;">Replies promptly within 24 hours.</p>
+                </div>
+
+                <div>
+                  <h4 style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.16em; color: var(--bronze); margin-bottom: 0.35rem;">Electronic Mail</h4>
+                  <a href="mailto:hello@raadhyaethnica.com" style="font-size: 0.95rem; color: var(--text-primary);">
+                    hello@raadhyaethnica.com
+                  </a>
+                </div>
+
+                <div>
+                  <h4 style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.16em; color: var(--bronze); margin-bottom: 0.35rem;">Atelier Operating Hours</h4>
+                  <p style="font-size: 0.95rem; color: var(--text-primary);">Monday &ndash; Saturday: 10:00 AM &ndash; 7:00 PM (Nepal Time)</p>
+                  <p style="font-size: 0.8rem; color: var(--text-muted);">Sunday: Closed for artisan workshop maintenance</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Contact Form -->
+            <div style="background-color: var(--bg-surface); border: 1px solid var(--border-color); padding: 3rem 2.25rem;">
+              <span class="eyebrow">Direct Transmission</span>
+              <h2 style="font-family: var(--font-display); font-size: 1.8rem; margin-bottom: 1.5rem;">Transmit an Atelier Message</h2>
+
+              <form onsubmit="handleContactSubmit(event)">
+                <div class="form-group">
+                  <label class="form-label" for="contact-name">Full Name *</label>
+                  <input type="text" id="contact-name" class="luxury-input" style="width: 100%;" required placeholder="Lady or Gentleman Name">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="contact-email">Email Address *</label>
+                  <input type="email" id="contact-email" class="luxury-input" style="width: 100%;" required placeholder="client@domain.com">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="contact-phone">Phone Number (with country code)</label>
+                  <input type="tel" id="contact-phone" class="luxury-input" style="width: 100%;" placeholder="+61 400 000 000">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="contact-subject">Subject *</label>
+                  <input type="text" id="contact-subject" class="luxury-input" style="width: 100%;" required placeholder="e.g. Size Consultation for Gulab Zardozi Kurta">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="contact-message">Message *</label>
+                  <textarea id="contact-message" class="luxury-input" style="width: 100%; min-height: 120px;" required placeholder="Describe your inquiry, preferred silhouette, or order reference..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-solid" style="width: 100%;">
+                  Transmit Message (Preview Mode)
+                </button>
+              </form>
+
+              <p style="font-size: 0.72rem; color: var(--text-muted); margin-top: 1rem; line-height: 1.5;">
+                Preview Mode Notice: Forms and checkout are preview-only until connected to a live backend API.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      `;
+    }
+
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('contact-name').value;
+      const subject = document.getElementById('contact-subject').value;
+      
+      openModal(`
+        <span class="eyebrow">Transmission Preview</span>
+        <h3 style="font-family: var(--font-display); font-size: 1.8rem; margin-bottom: 0.5rem;">Message Prepared For Concierge</h3>
+        <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
+          Thank you, <strong>${name}</strong>. Your inquiry regarding "<em>${subject}</em>" has been validated in preview mode.
+        </p>
+        <div style="background-color: var(--bg-surface); padding: 1.25rem; border: 1px solid var(--border-color); margin-bottom: 1.5rem;">
+          <p style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.5;">
+            Until our direct backend messaging endpoint is connected, you can also transmit this exact inquiry immediately to our client advisor via WhatsApp:
+          </p>
+        </div>
+        <a href="${SITE_CONFIG.brand.whatsappLink}" target="_blank" rel="noopener" class="btn btn-solid" style="width: 100%;">
+          Continue to WhatsApp Concierge
+        </a>
+      `);
+    }
+
+    /* ==========================================================================
+       VIEW RENDERER 6: CLIENT CARE POLICIES (#care)
+       (Shipping, Returns & Refunds, Privacy, Terms) with draft notices
+       ========================================================================== */
+    function renderCareView(activeTab = 'shipping') {
+      const tabs = [
+        { id: 'shipping', name: 'Shipping Policy' },
+        { id: 'returns', name: 'Returns & Refunds' },
+        { id: 'privacy', name: 'Privacy Policy' },
+        { id: 'terms', name: 'Terms of Service' }
+      ];
+
+      return `
+        <div class="container" style="padding-top: 4rem; padding-bottom: 6rem;">
+          <span class="eyebrow">Atelier Policies &amp; Client Trust</span>
+          <h1 class="section-title" style="margin-bottom: 2.5rem;">Client Care &amp; Terms</h1>
+
+          <div class="care-tabs-nav">
+            ${tabs.map(t => `
+              <button class="care-tab-btn ${activeTab === t.id ? 'active' : ''}" 
+                      onclick="location.hash='#care?tab=${t.id}'">
+                ${t.name}
+              </button>
+            `).join('')}
+          </div>
+
+          <div class="care-article-body">
+            <span class="owner-confirm-pill" style="margin-bottom: 1.5rem;">
+              Draft Policy Notice: These policy terms are prepared for owner confirmation before live boutique deployment.
+            </span>
+
+            ${activeTab === 'shipping' ? `
+              <h3>Boutique Delivery &amp; Shipping Policy</h3>
+              <p>At Raadhya Ethnica, every kurta is inspected, steam-pressed, and wrapped in protective tissue paper at our Kathmandu atelier prior to dispatch.</p>
+              <p><strong>Complimentary Delivery:</strong> We offer complimentary express courier shipping worldwide on all qualifying orders exceeding <strong>A$150.00</strong>. For orders under this threshold, a flat carrier fee of A$15.00 applies at checkout.</p>
+              <p><strong>Processing &amp; Dispatch Timeline:</strong> In-stock pieces are dispatched within 2 business days. Custom tailored garments require 4 to 6 business days for master artisan preparation.</p>
+              <p><strong>Tracking:</strong> Once dispatched, a direct tracking link from DHL Express / Aramex will be provided via email and WhatsApp.</p>
+            ` : activeTab === 'returns' ? `
+              <h3>7-Day Atelier Returns &amp; Refunds</h3>
+              <p>We take pride in our 100% authentic craftsmanship. If your garment does not meet your expectations or requires a different size, we gladly accept returns and exchanges within <strong>7 calendar days</strong> of confirmed delivery.</p>
+              <p><strong>Return Conditions:</strong> Items must be in their original, unwashed, unaltered condition with all Raadhya Ethnica boutique tags attached and in original dust packaging.</p>
+              <p><strong>Refund Process:</strong> Once received and verified at our Kathmandu atelier, refunds are credited to the original payment method (Visa, Mastercard, PayPal, or Stripe) within 5 to 7 business days.</p>
+              <p><strong>Initiating a Return:</strong> Contact our client advisor at <strong>hello@raadhyaethnica.com</strong> or via WhatsApp at <strong>+977 9869100969</strong> with your order identifier.</p>
+            ` : activeTab === 'privacy' ? `
+              <h3>Privacy Policy &amp; Data Safeguards</h3>
+              <p>Raadhya Ethnica values your privacy. We collect client information solely to fulfill orders, facilitate bespoke fittings, and provide discreet collection previews upon invitation.</p>
+              <p><strong>Payment Security:</strong> Payment transactions are handled directly through encrypted third-party processors (Visa, Mastercard, PayPal, Stripe). We do not store full credit card numbers on our servers.</p>
+              <p><strong>Client Choice:</strong> You retain the perpetual right to inspect, correct, or request deletion of your client profile at any time by contacting hello@raadhyaethnica.com.</p>
+            ` : `
+              <h3>Terms of Service</h3>
+              <p>By engaging with Raadhya Ethnica and placing an order, you agree to these Terms of Service.</p>
+              <p><strong>Authenticity Guarantee:</strong> All kurtas marketed under Raadhya Ethnica are guaranteed 100% authentic Indian ethnic wear handpicked and finished by our Kathmandu atelier.</p>
+              <p><strong>Currency:</strong> All prices displayed on this portal are in Australian Dollars (A$). Applicable import duties or local customs clearance taxes (if any) are governed by the destination nation.</p>
+            `}
+          </div>
+        </div>
+      `;
+    }
+
+    /* ==========================================================================
+       VIEW RENDERER 7: SHOPPING BAG & FREE SHIPPING METER (#bag)
+       ========================================================================== */
+    function renderBagView() {
+      const bag = State.bag;
+      const subtotal = bag.reduce((sum, item) => sum + (item.price * item.qty), 0);
+      const freeShipThreshold = SITE_CONFIG.brand.freeShippingThreshold;
+      const amountNeeded = Math.max(0, freeShipThreshold - subtotal);
+      const progressPct = Math.min(100, (subtotal / freeShipThreshold) * 100);
+
+      // Discount calculation if code applied
+      const discountAmount = State.appliedPromo === 'WELCOME10' ? (subtotal * 0.10) : 0;
+      const shippingCost = (subtotal >= freeShipThreshold || subtotal === 0) ? 0 : 15.00;
+      const finalTotal = Math.max(0, subtotal - discountAmount + shippingCost);
+
+      return `
+        <div class="bag-view-section container">
+          <span class="eyebrow">Your Selection</span>
+          <h1 class="section-title" style="margin-bottom: 2rem;">Shopping Bag</h1>
+
+          <!-- Free Shipping Progress Meter -->
+          <div class="shipping-progress-box">
+            ${amountNeeded === 0 ? `
+              <p style="font-size: 0.85rem; color: var(--bronze); font-weight: 500; text-transform: uppercase; letter-spacing: 0.1em;">
+                &#10003; You have unlocked Complimentary Worldwide Delivery (Orders above A$150)
+              </p>
+            ` : `
+              <p style="font-size: 0.85rem; color: var(--text-secondary);">
+                Add <strong>A$ ${amountNeeded.toFixed(2)}</strong> more to unlock <strong>Complimentary Worldwide Delivery</strong>
+              </p>
+            `}
+            <div class="progress-bar-track">
+              <div class="progress-bar-value" style="width: ${progressPct}%;"></div>
+            </div>
+          </div>
+
+          ${bag.length === 0 ? `
+            <div style="text-align: center; padding: 5rem 0;">
+              <p style="font-size: 1.15rem; color: var(--text-secondary); margin-bottom: 1.5rem;">Your shopping bag is currently empty.</p>
+              <a href="#shop?category=all" class="btn btn-solid">Explore Creations</a>
+            </div>
+          ` : `
+            <div class="bag-layout">
+              
+              <!-- Bag Items List -->
+              <div class="bag-items-list">
+                ${bag.map(item => `
+                  <div class="bag-item-card">
+                    <div class="bag-item-media">
+                      ${renderGarmentSVG(item.colorHex)}
+                    </div>
+                    <div class="bag-item-info">
+                      <span style="font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--bronze);">${item.collection}</span>
+                      <h3 style="font-family: var(--font-display); font-size: 1.15rem; font-weight: 400;">${item.name}</h3>
+                      <p style="font-size: 0.78rem; color: var(--text-secondary);">Shade: ${item.colorName} &middot; Size: ${item.size}</p>
+                      <div style="font-size: 0.95rem; font-weight: 500; margin-top: 0.25rem;">A$ ${(item.price * item.qty).toFixed(2)}</div>
+
+                      <div class="bag-item-qty-row">
+                        <div class="qty-stepper">
+                          <button onclick="updateBagQty('${item.id}', '${item.size}', '${item.colorName}', -1)" aria-label="Decrease quantity">&minus;</button>
+                          <span>${item.qty}</span>
+                          <button onclick="updateBagQty('${item.id}', '${item.size}', '${item.colorName}', 1)" aria-label="Increase quantity">&plus;</button>
+                        </div>
+                        <button class="btn-link" onclick="removeFromBag('${item.id}', '${item.size}', '${item.colorName}')" style="font-size: 0.68rem; color: var(--text-muted);">
+                          Remove
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                `).join('')}
+              </div>
+
+              <!-- Order Summary & Checkout -->
+              <div>
+                <div class="bag-summary-panel">
+                  <h3 style="font-family: var(--font-display); font-size: 1.4rem; font-weight: 400; border-bottom: 1px solid var(--border-color); padding-bottom: 1rem;">
+                    Order Summary
+                  </h3>
+
+                  <div class="summary-line">
+                    <span>Subtotal</span>
+                    <span>A$ ${subtotal.toFixed(2)}</span>
+                  </div>
+
+                  ${State.appliedPromo ? `
+                    <div class="summary-line" style="color: var(--bronze);">
+                      <span>Privileged Discount (10% WELCOME10)</span>
+                      <span>&minus; A$ ${discountAmount.toFixed(2)}</span>
+                    </div>
+                  ` : ''}
+
+                  <div class="summary-line">
+                    <span>Express Worldwide Delivery</span>
+                    <span>${shippingCost === 0 ? 'Complimentary' : 'A$ 15.00'}</span>
+                  </div>
+
+                  <div class="summary-line total">
+                    <span>Total (AUD)</span>
+                    <span>A$ ${finalTotal.toFixed(2)}</span>
+                  </div>
+
+                  <!-- Promo Code Input -->
+                  <div style="margin-top: 1rem;">
+                    <form onsubmit="handlePromoSubmit(event)" style="display: flex; gap: 0.5rem;">
+                      <input type="text" id="promo-code-input" class="luxury-input" placeholder="Promo code (e.g. WELCOME10)" value="${State.appliedPromo || ''}" style="padding: 0.75rem;">
+                      <button type="submit" class="btn btn-outline" style="padding: 0.75rem 1.25rem;">Apply</button>
+                    </form>
+                    ${State.appliedPromo ? `
+                      <span style="font-size: 0.68rem; color: var(--bronze); display: block; margin-top: 0.4rem;">Code WELCOME10 applied (10% deducted)</span>
+                    ` : ''}
+                  </div>
+
+                  <button class="btn btn-solid" onclick="openCheckoutPreviewModal(${finalTotal})" style="width: 100%; margin-top: 1.25rem;">
+                    Proceed to Encrypted Checkout
+                  </button>
+
+                  <p style="font-size: 0.7rem; color: var(--text-muted); text-align: center; margin-top: 0.5rem;">
+                    Accepted: Visa, Mastercard, PayPal, Stripe &middot; 256-Bit SSL
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          `}
+        </div>
+      `;
+    }
+
+    function addToBagFromPdp(productId) {
+      const product = SITE_CONFIG.products.find(p => p.id === productId);
+      if (!product) return;
+      const color = State.selectedProductColor[productId] || product.colors[0];
+      const size = State.selectedProductSize[productId] || product.sizes[1];
+
+      const existingIndex = State.bag.findIndex(item => item.id === productId && item.size === size && item.colorName === color.name);
+      if (existingIndex > -1) {
+        State.bag[existingIndex].qty += 1;
+      } else {
+        State.bag.push({
+          id: product.id,
+          name: product.name,
+          collection: product.collection,
+          price: product.price,
+          colorName: color.name,
+          colorHex: color.garmentTone,
+          size: size,
+          qty: 1
+        });
+      }
+
+      State.save();
+      showToast(`Added ${product.name} (${size}) to Shopping Bag`);
+    }
+
+    function updateBagQty(id, size, colorName, delta) {
+      const idx = State.bag.findIndex(item => item.id === id && item.size === size && item.colorName === colorName);
+      if (idx > -1) {
+        State.bag[idx].qty += delta;
+        if (State.bag[idx].qty <= 0) {
+          State.bag.splice(idx, 1);
+        }
+        State.save();
+        navigateToHash();
+      }
+    }
+
+    function removeFromBag(id, size, colorName) {
+      State.bag = State.bag.filter(item => !(item.id === id && item.size === size && item.colorName === colorName));
+      State.save();
+      navigateToHash();
+      showToast("Piece removed from shopping bag");
+    }
+
+    function handlePromoSubmit(e) {
+      e.preventDefault();
+      const input = document.getElementById('promo-code-input').value.trim().toUpperCase();
+      if (input === 'WELCOME10') {
+        State.appliedPromo = 'WELCOME10';
+        State.save();
+        showToast("Code WELCOME10 applied: 10% privilege discount activated");
+        navigateToHash();
+      } else if (input === '') {
+        State.appliedPromo = null;
+        State.save();
+        navigateToHash();
+      } else {
+        showToast("Unrecognized code. Use WELCOME10 for 10% premier discount.");
+      }
+    }
+
+    function openCheckoutPreviewModal(totalAmount) {
+      openModal(`
+        <span class="eyebrow">Encrypted Checkout &middot; Preview Mode</span>
+        <h3 style="font-family: var(--font-display); font-size: 1.8rem; margin-bottom: 0.5rem;">Atelier Order Confirmation</h3>
+        <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
+          Total Payable: <strong>A$ ${totalAmount.toFixed(2)}</strong> (Australian Dollars).<br>
+          Draft Notice: Forms and checkout are preview-only until connected to a live banking gateway.
+        </p>
+
+        <div style="background-color: var(--bg-surface); padding: 1.5rem; border: 1px solid var(--border-color); margin-bottom: 1.5rem;">
+          <h4 style="font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.16em; margin-bottom: 1rem;">Select Payment Method:</h4>
+          <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+            <label style="display: flex; align-items: center; gap: 0.75rem; font-size: 0.85rem; cursor: pointer;">
+              <input type="radio" name="payment-method" checked> Visa / Mastercard (Direct 256-Bit SSL)
+            </label>
+            <label style="display: flex; align-items: center; gap: 0.75rem; font-size: 0.85rem; cursor: pointer;">
+              <input type="radio" name="payment-method"> PayPal Express Checkout
+            </label>
+            <label style="display: flex; align-items: center; gap: 0.75rem; font-size: 0.85rem; cursor: pointer;">
+              <input type="radio" name="payment-method"> Stripe International Card Processing
+            </label>
+          </div>
+        </div>
+
+        <button class="btn btn-solid" style="width: 100%;" onclick="closeModal(); showToast('Preview order placed. In live mode, gateway connects to banking API.');">
+          Confirm Simulated Order (A$ ${totalAmount.toFixed(2)})
+        </button>
+      `);
+    }
+
+    /* ==========================================================================
+       VIEW RENDERER 8: WISHLIST (#wishlist)
+       ========================================================================== */
+    function renderWishlistView() {
+      const items = SITE_CONFIG.products.filter(p => State.wishlist.includes(p.id));
+
+      return `
+        <div class="container" style="padding-top: 4rem; padding-bottom: 6rem;">
+          <span class="eyebrow">Saved Pieces</span>
+          <h1 class="section-title" style="margin-bottom: 2rem;">Client Wishlist</h1>
+
+          ${items.length === 0 ? `
+            <div style="text-align: center; padding: 5rem 0;">
+              <p style="font-size: 1.15rem; color: var(--text-secondary); margin-bottom: 1.5rem;">No creations currently saved in your wishlist.</p>
+              <a href="#shop?category=all" class="btn btn-solid">Discover Collections</a>
+            </div>
+          ` : `
+            <div class="shop-grid-container">
+              ${items.map(p => renderProductCardHTML(p)).join('')}
+            </div>
+          `}
+        </div>
+      `;
+    }
+
+    function toggleWishlist(productId) {
+      const idx = State.wishlist.indexOf(productId);
+      if (idx > -1) {
+        State.wishlist.splice(idx, 1);
+        showToast("Piece removed from your wishlist");
+      } else {
+        State.wishlist.push(productId);
+        showToast("Piece saved to your wishlist");
+      }
+      State.save();
+      // If we are currently on wishlist view, re-render
+      if (window.location.hash.startsWith('#wishlist')) {
+        navigateToHash();
+      } else {
+        // Update cardiac toggle buttons on page
+        const cardBtn = document.querySelector(`#card-${productId} .product-wishlist-toggle`);
+        if (cardBtn) {
+          cardBtn.classList.toggle('active', State.wishlist.includes(productId));
+        }
+      }
+    }
+
+    /* ==========================================================================
+       VIEW RENDERER 9: CLIENT ACCOUNT SUITE (#account)
+       ========================================================================== */
+    function renderAccountView() {
+      return `
+        <div class="container">
+          <div class="auth-card-wrap">
+            <span class="eyebrow" style="text-align: center;">Maison Client Suite</span>
+            <h1 class="section-title" style="text-align: center; font-size: 1.8rem; margin-bottom: 1.5rem;">Client Access</h1>
+
+            <div class="auth-tab-switch">
+              <button class="auth-tab-btn active" id="btn-tab-signin" onclick="switchAuthTab('signin')">Sign In</button>
+              <button class="auth-tab-btn" id="btn-tab-register" onclick="switchAuthTab('register')">Register</button>
+            </div>
+
+            <!-- Sign In Form -->
+            <form id="form-signin" onsubmit="event.preventDefault(); showToast('Simulated client sign in authenticated.');">
+              <div class="form-group">
+                <label class="form-label" for="signin-email">Client Email Address</label>
+                <input type="email" id="signin-email" class="luxury-input" style="width: 100%;" required placeholder="client@domain.com">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="signin-password">Password</label>
+                <input type="password" id="signin-password" class="luxury-input" style="width: 100%;" required placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;">
+              </div>
+              <button type="submit" class="btn btn-solid" style="width: 100%; margin-top: 1rem;">
+                Enter Client Suite
+              </button>
+            </form>
+
+            <!-- Register Form -->
+            <form id="form-register" style="display: none;" onsubmit="event.preventDefault(); showToast('Client registration confirmed. Privilege code WELCOME10 available.');">
+              <div class="form-group">
+                <label class="form-label" for="reg-name">Full Name</label>
+                <input type="text" id="reg-name" class="luxury-input" style="width: 100%;" required placeholder="Lady or Gentleman Name">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="reg-email">Client Email</label>
+                <input type="email" id="reg-email" class="luxury-input" style="width: 100%;" required placeholder="client@domain.com">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="reg-password">Create Password</label>
+                <input type="password" id="reg-password" class="luxury-input" style="width: 100%;" required placeholder="Minimum 8 characters">
+              </div>
+              <button type="submit" class="btn btn-solid" style="width: 100%; margin-top: 1rem;">
+                Create Client Account
+              </button>
+            </form>
+
+            <p style="font-size: 0.72rem; color: var(--text-muted); text-align: center; margin-top: 1.5rem; line-height: 1.5;">
+              Preview Mode Notice: Client login and registration are currently simulated in this self-contained demo until linked to a live backend.
+            </p>
+          </div>
+        </div>
+      `;
+    }
+
+    function switchAuthTab(tab) {
+      const signinBtn = document.getElementById('btn-tab-signin');
+      const regBtn = document.getElementById('btn-tab-register');
+      const signinForm = document.getElementById('form-signin');
+      const regForm = document.getElementById('form-register');
+
+      if (tab === 'signin') {
+        signinBtn.classList.add('active');
+        regBtn.classList.remove('active');
+        signinForm.style.display = 'block';
+        regForm.style.display = 'none';
+      } else {
+        signinBtn.classList.remove('active');
+        regBtn.classList.add('active');
+        signinForm.style.display = 'none';
+        regForm.style.display = 'block';
+      }
+    }
+
+    /* ==========================================================================
+       SITEWIDE PROMO FILM BAND ENGINE
+       (Muted, looping luxury scene transitions with play/pause and progress)
+       ========================================================================== */
+    function initFilmBand() {
+      const artContainer = document.getElementById('film-scene-art');
+      const titleEl = document.getElementById('film-active-title');
+      const captionEl = document.getElementById('film-active-caption');
+      const counterEl = document.getElementById('film-counter-text');
+      const progressBar = document.getElementById('film-progress-bar');
+      const playBtn = document.getElementById('toggle-film-playback');
+      const playIcon = document.getElementById('film-play-icon');
+      const playText = document.getElementById('film-play-text');
+
+      if (!artContainer) return;
+
+      let currentStep = 0;
+      let progressTimer = null;
+      let totalDurationMs = 5000;
+      let intervalMs = 50;
+
+      function renderCurrentScene() {
+        const vid = SITE_CONFIG.promoVideos[State.currentFilmIdx];
+        artContainer.style.opacity = '0';
+
+        setTimeout(() => {
+          artContainer.innerHTML = renderGarmentSVG(vid.colorHex);
+          if (titleEl) titleEl.textContent = vid.title;
+          if (captionEl) captionEl.textContent = vid.caption;
+          if (counterEl) counterEl.textContent = `0${State.currentFilmIdx + 1} / 0${SITE_CONFIG.promoVideos.length}`;
+          artContainer.style.opacity = '1';
+        }, 300);
+      }
+
+      function step() {
+        if (!State.filmPlaying) return;
+        currentStep += intervalMs;
+        const pct = (currentStep / totalDurationMs) * 100;
+        if (progressBar) progressBar.style.width = `${pct}%`;
+
+        if (currentStep >= totalDurationMs) {
+          currentStep = 0;
+          State.currentFilmIdx = (State.currentFilmIdx + 1) % SITE_CONFIG.promoVideos.length;
+          renderCurrentScene();
+        }
+      }
+
+      renderCurrentScene();
+      progressTimer = setInterval(step, intervalMs);
+
+      if (playBtn) {
+        playBtn.addEventListener('click', () => {
+          State.filmPlaying = !State.filmPlaying;
+          if (State.filmPlaying) {
+            playIcon.innerHTML = '&#10074;&#10074;';
+            playText.textContent = 'Pause';
+          } else {
+            playIcon.innerHTML = '&#9658;';
+            playText.textContent = 'Play';
+          }
+        });
+      }
+    }
+
+    /* ==========================================================================
+       ROTATING ANNOUNCEMENT BAR ENGINE
+       ========================================================================== */
+    function initAnnouncementRotation() {
+      const items = document.querySelectorAll('.announcement-item');
+      if (items.length <= 1) return;
+      let activeIdx = 0;
+
+      setInterval(() => {
+        items[activeIdx].classList.remove('active');
+        activeIdx = (activeIdx + 1) % items.length;
+        items[activeIdx].classList.add('active');
+      }, 4500);
+    }
+
+    /* ==========================================================================
+       CURTAIN NAVIGATION MENU TOGGLE
+       ========================================================================== */
+    function toggleMenu(forceState) {
+      const curtain = document.getElementById('menu-curtain');
+      if (!curtain) return;
+      const isOpen = curtain.classList.contains('open');
+      const next = forceState !== undefined ? forceState : !isOpen;
+
+      if (next) {
+        curtain.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      } else {
+        curtain.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+    }
+
+    /* Bind View Listeners */
+    function bindViewListeners() {
+      // Any specific per-view dynamic setups
+    }
+
+    /* ==========================================================================
+       APPLICATION INITIALIZATION
+       ========================================================================== */
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Setup Theme
+      applyTheme(State.theme);
+      const themeToggle = document.getElementById('theme-toggle');
+      if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+          const next = State.theme === 'light' ? 'dark' : 'light';
+          applyTheme(next);
+        });
+      }
+
+      // 2. Setup Curtain Menu
+      const openBtn = document.getElementById('open-menu-btn');
+      const closeBtn = document.getElementById('close-menu-btn');
+      if (openBtn) openBtn.addEventListener('click', () => toggleMenu(true));
+      if (closeBtn) closeBtn.addEventListener('click', () => toggleMenu(false));
+
+      // 3. Update dynamic counters
+      State.updateCounters();
+
+      // 4. Initialize announcement rotation & film band
+      initAnnouncementRotation();
+      initFilmBand();
+
+      // 5. Update footer year
+      const yearEl = document.getElementById('current-year');
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+      // 6. Router initialization
+      window.addEventListener('hashchange', navigateToHash);
+      navigateToHash();
+    });
+  </script>
+</body>
+</html>
