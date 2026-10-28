@@ -1,0 +1,9 @@
+{
+  "name": "raadhya-ethnica",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Authentic Indian Ethnic Wear - Raadhya Ethnica",
+  "scripts": {
+    "build": "echo 'Static build ready'"
+  }
+}
